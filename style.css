@@ -1,3 +1,147 @@
+html{
+    font-size: 62.5%; /*10px*/
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    line-height: 2.813rem;
+}
+
 .MainMenu_item{
     display: inline-block;
+    font-family: 'Roboto';
+    font-size: 2.4rem;
+    font-weight: 500;
 }
+
+.font-article-name{
+    font-family: 'Roboto';
+    font-size: 2.4rem;
+    font-weight: 700;
+    /* color: red; */
+}
+
+.font-main-title{
+    font-family: 'Playfair Display';
+    font-size: 8.6rem;
+    font-weight: 600;
+    line-height: 10.32rem;
+}
+
+.font-Hero-title{
+    font-family: 'Playfair Display';
+    font-size: 8.6rem;
+    font-weight: 500;
+    line-height: 10.32rem;
+    text-align: center;            
+}
+
+.font-Hero-text{
+    font-family: 'Roboto';
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 2.344rem;
+    text-align: center;
+}
+
+.font-Biography-title{
+    font-family: 'Playfair Display';
+    font-size: 8.6rem;
+    font-weight: 500;
+    line-height: 11.464rem;
+}
+
+.font-Biography-text{
+    font-family: 'Roboto';
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 2.109rem;
+}
+
+.font-Biography-cit{
+    font-family: 'Bitter';
+    font-size: 2.6rem;
+    font-weight: 400;
+    line-height: 3.12rem;
+}
+
+.font-art-text{
+    font-family: 'Roboto';
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.875rem;
+}
+
+.font-art-text-b{
+    font-family: 'Roboto';
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 1.875rem;
+}
+
+.font-art-cit{
+    font-family: 'Bitter';
+    font-size: 3.2rem;
+    font-weight: 400;
+    line-height: 3.84rem;
+    text-align: center;
+}
+
+.font-Strong_point-title{
+    font-family: 'Playfair Display';
+    font-size: 8.6rem;
+    font-weight: 500;
+    line-height: 8.6rem;    
+}
+
+.font-Strong_point-text{
+    font-family: 'Bitter';
+    font-size: 3.4rem;
+    font-weight: 400;
+    line-height: 4.08rem;
+    
+}
+
+.font-Contacts-text{
+    font-family: 'Roboto';
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2.6rem;
+}
+
+.font-Logo-text{
+    font-family: 'Roboto';
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 2.109rem;
+    text-align: center;
+}
+
+.font-Logo-text-b{
+    font-family: 'Roboto';
+    font-size: 2.4rem;
+    font-weight: 900;
+    line-height: 2.813rem;
+    text-align: center;
+}
+
+.font-Pricing-text{
+    font-family: 'Roboto';
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.875rem;
+    text-align: right;    
+}
+/* 
+
+font-family: Roboto;
+font-size: 16px;
+font-weight: 400;
+line-height: 18.75px;
+text-align: right;
+
+
+
+
+ */

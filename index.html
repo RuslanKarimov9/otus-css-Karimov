@@ -4,11 +4,27 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mod Studio</title>
+
+  <!-- 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> 
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">  
+-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bitter:ital@0;1&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="fonts.css">
+
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-      <h1>Mod</h1>
+      <h1 class="font-main-title">Mod</h1>
       <nav>
           <nav class="MainMenu">
               <ul>
@@ -25,24 +41,23 @@
   <main>
       <section class="Hero">
         <img src="img\inside-weather.jpg" alt="Modern Web Studio">
-        <h2>Mod Studio</h2>
-        <p>Modern Web Studio</p>
+        <h2 class="font-Hero-title">Mod Studio</h2>
+        <p class="font-Hero-text">Modern Web Studio</p>
         <hr>
       </section>
       <article class="art_Biography">
         <!-- В этой статье рассказываем о сотрудниках посекционно -->
-        <h2>Biography</h2>
+        <h2 class="font-article-name">Biography</h2>
         <section>
           <img src="img\jared-weiss.jpg" alt="Katya Mills">
-          <h3>Katya Mills</h3>
-          <p>
+          <h3 class="font-Biography-title">Katya Mills</h3>
+          <p class="font-Biography-text">
             Art Director              
-          </p>
-          <p>
+            <br>
             Scenography / Styling / Creative Photography / Design              
           </p>
           <blockquote>
-            <p>
+            <p class="font-Biography-cit">
               “The more I deal with the work as something that is my own, as something that is personal, the more successful it is.”
             </p>
           </blockquote>
@@ -54,55 +69,64 @@
       </article>
       <article class="art_Designers">
         <!-- В этой статье перечисляем наших дизайнеров -->          
-        <h2>Designers</h2>
+        <h2 class="font-article-name">Designers</h2>
         <section>
           <img src="img\Jess-Wonder.jpg" alt="Jess Wonder">
-          <h3>Jess Wonder</h3>
-          <p>
-            From/ Be more flower
-          </p>
-          <p>
-            Skills/ Design Strategy / Marketing
+          <p class="font-art-text">
+            <span class="font-art-text-b">Jess Wonder</span>
+            <br>
+            <span class="font-art-text-b">From</span>/ Be more flower
+            <br>      
+            <span class="font-art-text-b">Skills</span>/ Design Strategy / Marketing
           </p>
         </section>
         <section>
           <img src="img\Kameron-Clein.jpg" alt="Kameron Clein">
-          <h3>Kameron Clein</h3>
-          <p>
-            From/ Be more flower
-          </p>
-          <p>
-            Skills/ Design Strategy / Marketing              
+          <p class="font-art-text">
+            <span class="font-art-text-b">Kameron Clein</span>
+            <br>
+            <span class="font-art-text-b">From</span>/ Be more flower
+            <br>
+            <span class="font-art-text-b">Skills</span>/ Design Strategy / Marketing              
           </p>
         </section>
         <section>
           <img src="img\LOUISSE-RED.jpg" alt="LOUISSE RED">
-          <h3>LOUISSE RED</h3>
-          <p>
-            From/ Be more flower
-          </p>
-          <p>
-            Skills/ Design Strategy / Marketing                            
+          <p class="font-art-text">
+            <span class="font-art-text-b">LOUISSE RED</span>
+            <br>
+            <span class="font-art-text-b">From</span>/ Be more flower
+            <br>
+            <span class="font-art-text-b">Skills</span>/ Design Strategy / Marketing                            
           </p>
         </section>
         <hr>
       </article>
       <article class="art_Testimonials">
         <!-- В этой статье ... -->          
-        <h2>Testimonials</h2>
+        <h2 class="font-article-name">Testimonials</h2>
         <article>
           <img src="img\keghan-crossland.jpg" alt="keghan crossland">
-          <p>Website</p>
-          <a href="www.whitepapers.com">www.whitepapers.com</a>
-          <p>Creativity</p>
-          <a href="www.whitepapers.com">www.whitepapers.com</a>
-          <p>Creativity</p>
-          <a href="www.whitepapers.com">www.whitepapers.com</a>            
+          <p class="font-art-text">
+            <span class="font-art-text-b">Website</span>
+            <br>
+            <a href="www.whitepapers.com">www.whitepapers.com</a>
+          </p>
+          <p class="font-art-text">
+            <span class="font-art-text-b">Creativity</span>
+            <br>
+            <a href="www.whitepapers.com">www.whitepapers.com</a>
+          </p>
+          <p class="font-art-text">
+            <span class="font-art-text-b">Creativity</span>
+            <br>
+            <a href="www.whitepapers.com">www.whitepapers.com</a>            
+          </p>
         </article>
         <article>
           <img src="img\sinitta-leunen.jpg" alt="sinitta leunen">
           <blockquote>
-            <p>
+            <p class="font-art-cit">
               "I just really want to do good work and work with some great people, people who challenge me."
             </p>
           </blockquote>
@@ -111,12 +135,12 @@
       </article>
       <article class="art_Strong_points">
         <!-- В этой статье перечисляем компетениции -->                    
-        <h2>Strong points</h2>
+        <h2 class="font-article-name">Strong points</h2>
         <img src="img\dawid-liberadzki.jpg" alt="dawid liberadzki">
         <img src="img\avery-klein.jpg" alt="avery klein">
         <img src="img\keghan-crossland.jpg" alt="keghan crossland">
-        <h3>Strengths</h3>
-        <ul>
+        <h3 class="font-Strong_point-title">Strengths</h3>
+        <ul class="font-Strong_point-text">
           <li>Interiors</li>
           <li>Outdoors</li>
           <li>Portraits</li>
@@ -134,15 +158,15 @@
   <footer>
     <!-- В подвале - контакты -->       
     <hr>
-    <address class="Contacts">
+    <address class="Contacts font-Contacts-text">
       <a class="cont_Phone" href="tel:+7 921 123-45-67" rel="">+79211234567</a>
       <br>
-      <a class="cont_Mail" href="info@modstudio.com">info@modstudio.com</a>        
+      <a class="cont_Mail" href="info@modstudio.com">INFO@MODSTUDIO.COM</a>        
     </address>
-    <p class='Logo'>
-      A product of  MOD
+    <p class="Logo font-Logo-text">
+      A product of <span class="font-Logo-text-b">MOD</span>
     </p>
-    <p class="Pricing">
+    <p class="Pricing font-Pricing-text">
       © 2023 Mod Media. All rights reserved
     </p>
   </footer>
