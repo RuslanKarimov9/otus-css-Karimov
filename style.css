@@ -1,12 +1,19 @@
 html{
     font-size: 62.5%; /*10px*/
 }
+/*
+    Здесь использовался тэг "html" т.к. таким образом проще всего задать "опорное" значение для свойства "font-size". 
+    Это значение удобно использовать в font-ориентированных классах как единицу (1rem)
+*/
 
 body{
     font-family: 'Roboto', sans-serif;
     font-size: 2rem;
     line-height: 2.813rem;
 }
+/*
+    Здесь использовался тэг "body" для задания значений "по-умолчанию" для ряда наследуемых свойств
+*/
 
 .block-main{
     display: flex;
@@ -176,15 +183,3 @@ body{
     line-height: 1.875rem;
     text-align: right;    
 }
-/* 
-
-font-family: Roboto;
-font-size: 16px;
-font-weight: 400;
-line-height: 18.75px;
-text-align: right;
-
-
-
-
- */
