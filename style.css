@@ -35,15 +35,19 @@ body{
 .Hero{
     box-sizing: border-box;
     background-image: url("../img/inside-weather.jpg"); 
+    background-size: cover;
+    background-position: center;
     text-align: center;
+    margin: 0 auto;    
     height: 630px;    
+    max-width: 1440px;
     padding-top: 135px;
 }
 
 .block-Hero{
     display: inline-block;
+    box-sizing: border-box;    
     background-color: white;
-    box-sizing: border-box;
     width: 690px;
     height: 360px;  
     padding-top: 110px;   
