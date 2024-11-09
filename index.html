@@ -42,27 +42,37 @@
           <p class="font-Hero-text block-Hero-text">Modern Web Studio</p>
         </div>  
       </section>
-      <article class="art_Biography">
+      <article class="art-Biography">
         <!-- В этой статье рассказываем о сотрудниках посекционно -->
-        <h2 class="font-article-name">Biography</h2>
-        <section>
-          <img src="img\jared-weiss.jpg" alt="Katya Mills">
-          <h3 class="font-Biography-title">Katya Mills</h3>
-          <p class="font-Biography-text">
-            Art Director              
-            <br>
-            Scenography / Styling / Creative Photography / Design              
-          </p>
-          <blockquote>
-            <p class="font-Biography-cit">
-              “The more I deal with the work as something that is my own, as something that is personal, the more successful it is.”
+        <section class="block-Biography">
+          <!--  ширина картинки пока здесь (так удобнее), но, возможно, придётся перенести  
+                в css для работы с @media
+          -->          
+          <img src="img\jared-weiss.jpg" alt="Katya Mills" style="width: 571px">
+          <div>
+            <!-- здесь заголовок пришлось упаковать в "дивные скобки" т.к. его надо повернуть... -->
+            <h2 class="font-article-name block-Biography-title">Biography</h2>
+          </div>
+          <div class="block-Biography-text">
+            <h3 class="font-Biography-title">
+              Katya
+                <br>
+              Mills
+            </h3>
+            <p class="font-Biography-text">
+              Art Director              
+              <br>
+              Scenography / Styling / Creative Photography / Design              
             </p>
-          </blockquote>
+            <div class="block-Bigraphy-shortline"></div>
+            <blockquote class="font-Biography-cit">
+              “The more I deal with the work as something that is my own, as something that is personal, the more successful it is.”
+            </blockquote>
+          </div>
         </section>
         <section>
         <!-- в этой секции пока пусто -->
         </section>
-        <hr>
       </article>
       <article class="art_Designers">
         <!-- В этой статье перечисляем наших дизайнеров -->          
