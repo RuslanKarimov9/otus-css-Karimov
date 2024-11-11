@@ -1,0 +1,203 @@
+html{
+    font-size: 62.5%; /*10px*/
+}
+/*
+    Здесь использовался тэг "html" т.к. таким образом проще всего задать "опорное" значение для свойства "font-size". 
+    Это значение удобно использовать в font-ориентированных классах как единицу (1rem)
+*/
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    line-height: 2.813rem;
+
+    /*  
+        так сбрасываем стандартные отступы и центрируем сайт  
+    */    
+    margin: 0 auto;
+}
+/*
+    Здесь использовался тэг "body" для задания значений "по-умолчанию" для ряда наследуемых свойств
+*/
+
+/* 
+    так сбрасываем стандартный стиль ссылок (тэг <a></a>) 
+*/
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.block-main{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.block_main-title{
+    padding-left: 2rem;
+}
+
+.MainMenu{
+    /* 
+        Меню простое, поэтому делаем его на флексе
+     */    
+    display: flex;
+    width: 70rem;
+    justify-content: space-between;
+}
+
+.MainMenu_item{
+    text-align: center;
+    width: 16rem;   
+}
+
+.Hero{
+    box-sizing: border-box;
+    background-image: url("../img/inside-weather.jpg"); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;    
+    text-align: center;
+    height: 630px;    
+    padding-top: 135px;
+}
+
+.block-Hero{
+    display: inline-block;
+    box-sizing: border-box;    
+    background-color: white;
+    width: 690px;
+    height: 360px;  
+    padding-top: 110px;   
+}
+
+.block-Hero-title{
+    margin:  0;
+}
+
+.block-Hero-text{
+    margin: 5px 0;
+}
+
+.font-article-name{
+    font-family: 'Roboto';
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+
+.font-main-title{
+    font-family: 'Playfair Display';
+    font-size: 8.6rem;
+    font-weight: 600;
+    line-height: 10.32rem;
+}
+
+.font-main-menu{
+    font-family: 'Roboto';
+    font-size: 2.4rem;
+    font-weight: 500;
+}
+
+.font-Hero-title{
+    font-family: 'Playfair Display';
+    font-size: 8.6rem;
+    font-weight: 500;
+    line-height: 10.32rem;
+}
+
+.font-Hero-text{
+    font-family: 'Roboto';
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 2.344rem;
+}
+
+.font-Biography-title{
+    font-family: 'Playfair Display';
+    font-size: 8.6rem;
+    font-weight: 500;
+    line-height: 11.464rem;
+}
+
+.font-Biography-text{
+    font-family: 'Roboto';
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 2.109rem;
+}
+
+.font-Biography-cit{
+    font-family: 'Bitter';
+    font-size: 2.6rem;
+    font-weight: 400;
+    line-height: 3.12rem;
+}
+
+.font-art-text{
+    font-family: 'Roboto';
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.875rem;
+}
+
+.font-art-text-b{
+    font-family: 'Roboto';
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 1.875rem;
+}
+
+.font-art-cit{
+    font-family: 'Bitter';
+    font-size: 3.2rem;
+    font-weight: 400;
+    line-height: 3.84rem;
+    text-align: center;
+}
+
+.font-Strong_point-title{
+    font-family: 'Playfair Display';
+    font-size: 8.6rem;
+    font-weight: 500;
+    line-height: 8.6rem;    
+}
+
+.font-Strong_point-text{
+    font-family: 'Bitter';
+    font-size: 3.4rem;
+    font-weight: 400;
+    line-height: 4.08rem;
+    
+}
+
+.font-Contacts-text{
+    font-family: 'Roboto';
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2.6rem;
+}
+
+.font-Logo-text{
+    font-family: 'Roboto';
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 2.109rem;
+    text-align: center;
+}
+
+.font-Logo-text-b{
+    font-family: 'Roboto';
+    font-size: 2.4rem;
+    font-weight: 900;
+    line-height: 2.813rem;
+    text-align: center;
+}
+
+.font-Pricing-text{
+    font-family: 'Roboto';
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.875rem;
+    text-align: right;    
+}
