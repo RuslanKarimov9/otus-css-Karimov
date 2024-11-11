@@ -10,10 +10,23 @@ body{
     font-family: 'Roboto', sans-serif;
     font-size: 2rem;
     line-height: 2.813rem;
+
+    /*  
+        так сбрасываем стандартные отступы и центрируем сайт  
+    */    
+    margin: 0 auto;
 }
 /*
     Здесь использовался тэг "body" для задания значений "по-умолчанию" для ряда наследуемых свойств
 */
+
+/* 
+    так сбрасываем стандартный стиль ссылок (тэг <a></a>) 
+*/
+a{
+    text-decoration: none;
+    color: black;
+}
 
 .block-main{
     display: flex;
@@ -36,9 +49,6 @@ body{
 
 .MainMenu_item{
     text-align: center;
-    font-family: 'Roboto';
-    font-size: 2.4rem;
-    font-weight: 500;
     width: 16rem;   
 }
 
@@ -47,10 +57,9 @@ body{
     background-image: url("../img/inside-weather.jpg"); 
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;    
     text-align: center;
-    margin: 0 auto;    
     height: 630px;    
-    max-width: 1440px;
     padding-top: 135px;
 }
 
@@ -82,6 +91,12 @@ body{
     font-size: 8.6rem;
     font-weight: 600;
     line-height: 10.32rem;
+}
+
+.font-main-menu{
+    font-family: 'Roboto';
+    font-size: 2.4rem;
+    font-weight: 500;
 }
 
 .font-Hero-title{
