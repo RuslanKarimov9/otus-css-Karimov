@@ -1,5 +1,6 @@
 html{
     font-size: 62.5%; /*10px*/
+    /* "Базовое" значение ширины сайта (значение по макету) = 1440px = 144rem */
 }
 /*
     Здесь использовался тэг "html" т.к. таким образом проще всего задать "опорное" значение для свойства "font-size". 
@@ -10,23 +11,196 @@ body{
     font-family: 'Roboto', sans-serif;
     font-size: 2rem;
     line-height: 2.813rem;
+
+    /*  
+        так сбрасываем стандартные отступы и центрируем сайт  
+    */    
+    margin: 0 auto;
+}
+/*
+    Здесь использовался тэг "body" для задания значений "по-умолчанию" для ряда наследуемых свойств
+*/
+
+/* 
+    так сбрасываем стандартный стиль ссылок (тэг <a></a>) 
+*/
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.block-main{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.block_main-title{
+    padding-left: 2rem;
+}
+
+.MainMenu{
+    /* 
+        Меню простое, поэтому делаем его на флексе
+     */    
+    display: flex;
+    width: 70rem;
+    justify-content: space-between;
 }
 /*
     Здесь использовался тэг "body" для задания значений "по-умолчанию" для ряда наследуемых свойств
 */
 
 .MainMenu_item{
-    display: inline-block;
-    font-family: 'Roboto';
-    font-size: 2.4rem;
-    font-weight: 500;
+    text-align: center;
+    width: 16rem;   
 }
+
+.Hero{
+    box-sizing: border-box;
+    background-image: url("../img/inside-weather.jpg"); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;    
+    text-align: center;
+    height: 630px;    
+    padding-top: 135px;
+}
+
+.block-Hero{
+    display: inline-block;
+    box-sizing: border-box;    
+    background-color: white;
+    width: 690px;
+    height: 360px;  
+    padding-top: 110px;   
+}
+
+.block-Hero-title{
+    margin:  0;
+}
+
+.block-Hero-text{
+    margin: 5px 0;
+}
+
+/* 
+*****************************************************************************************************
+    Статья "Biography"
+*****************************************************************************************************    
+ */
+.art-Biography{
+    /* "Базовое" значение ширины статьи (значение по макету) = 1165px = 116.5rem */
+
+    /*
+        Для придания "резиновости" статье выставляем ширину в %
+        Примечание: делаем это здесь т.к. требуется единообразно расположить 
+                    все её секции (см. класс "block-Biography")
+    */
+    width: 81%; /* 1165px/1440px */
+    /*  
+        Повторно (под новую ширину) центрируем.
+    */
+    margin: 0 auto;     
+    
+    margin-top: 150px;
+    /* border: 1px solid; */
+}
+
+.block-Biography{
+    /* 
+        Секция простая - сделаем её на флексе
+     */
+    display: flex;
+    height: 840px;
+    justify-content: center;
+    /* border: 1px solid; */
+}
+
+.block-Biography-img{
+    width: 46.4%;  /* 541px/1165px */
+    object-fit: cover;
+    /* border: 1px solid; */
+}
+
+.block-Biography-text{
+    width: 39.1%; /* 455px/1165px */
+}
+
+.block-Biography-title{
+    transform: rotate(-90deg) translateX(-2rem) translateY(-1rem);
+}
+
+/* чтобы не плодить классы обратимся к блоку используя вложение селекторов */
+.block-Biography-text > h3{
+    margin-top: 18rem;
+    margin-bottom: 0;
+}
+
+/* чтобы не плодить классы обратимся к блоку используя вложение селекторов */
+.block-Biography-text > p{
+    margin-top: 2rem;
+    margin-bottom: 0;
+}
+
+/* чтобы не плодить классы обратимся к блоку используя вложение селекторов */
+.block-Biography-text > blockquote{
+    /* 
+        размещаем блок  
+    */
+    margin: 1.5rem 0 0 0;
+    /* 
+        размещаем текст
+    */
+    padding: 0 10rem 0 0;
+    /* border: 1px solid;     */
+}
+
+.block-Bigraphy-shortline{
+    box-sizing: border-box;
+    background-color: black;
+    width: 2rem;
+    height: 0.6rem;
+    margin-top: 4.5rem;
+    margin-bottom: 0;
+}
+
+/* 
+*****************************************************************************************************
+    Статья "Designers"
+*****************************************************************************************************    
+ */
+
+
+/* 
+*****************************************************************************************************
+    Статья "Testimonials"
+*****************************************************************************************************    
+ */
+
+/* 
+*****************************************************************************************************
+    Статья "Strong_points"
+*****************************************************************************************************    
+ */
+
+/* 
+*****************************************************************************************************
+    Подвал (footer)
+*****************************************************************************************************    
+ */ 
+
+
+/* 
+*****************************************************************************************************
+    Дальше только шрифты...
+*****************************************************************************************************    
+ */
 
 .font-article-name{
     font-family: 'Roboto';
     font-size: 2.4rem;
     font-weight: 700;
-    /* color: red; */
 }
 
 .font-main-title{
@@ -36,12 +210,17 @@ body{
     line-height: 10.32rem;
 }
 
+.font-main-menu{
+    font-family: 'Roboto';
+    font-size: 2.4rem;
+    font-weight: 500;
+}
+
 .font-Hero-title{
     font-family: 'Playfair Display';
     font-size: 8.6rem;
     font-weight: 500;
     line-height: 10.32rem;
-    text-align: center;            
 }
 
 .font-Hero-text{
@@ -49,7 +228,6 @@ body{
     font-size: 2rem;
     font-weight: 500;
     line-height: 2.344rem;
-    text-align: center;
 }
 
 .font-Biography-title{

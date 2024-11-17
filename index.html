@@ -24,48 +24,52 @@
 </head>
 <body>
   <header>
-      <h1 class="font-main-title">Mod</h1>
-      <nav>
-          <nav class="MainMenu">
-              <ul>
-                <li class="MainMenu_item"><a href=#>Biography</a></li>
-                <li class="MainMenu_item"><a href=#>Designers</a></li>
-                <li class="MainMenu_item"><a href=#>Testimonials</a></li>
-                <li class="MainMenu_item"><a href=#>Strong points</a></li>
-              </ul>
-            </nav>
-      </nav>
-    <hr>
-    <hr>
+      <div class="block-main">
+        <h1 class="font-main-title block_main-title">Mod</h1>
+        <nav class="MainMenu">
+          <div class="font-main-menu MainMenu_item"><a href="">Biography</a></div>
+          <div class="font-main-menu MainMenu_item"><a href="">Designers</a></div>
+          <div class="font-main-menu MainMenu_item"><a href="">Testimonials</a></div>
+          <div class="font-main-menu MainMenu_item"><a href="">Strong points</a></div>
+        </nav>
+      </div>  
   </header>
   <main>
       <section class="Hero">
-        <img src="img\inside-weather.jpg" alt="Modern Web Studio">
-        <h2 class="font-Hero-title">Mod Studio</h2>
-        <p class="font-Hero-text">Modern Web Studio</p>
-        <hr>
+        <!-- <img src="img\inside-weather.jpg" alt="Modern Web Studio"> -->
+        <div class="block-Hero">
+          <h2 class="font-Hero-title block-Hero-title">Mod Studio</h2>
+          <p class="font-Hero-text block-Hero-text">Modern Web Studio</p>
+        </div>  
       </section>
-      <article class="art_Biography">
+      <article class="art-Biography">
         <!-- В этой статье рассказываем о сотрудниках посекционно -->
-        <h2 class="font-article-name">Biography</h2>
-        <section>
-          <img src="img\jared-weiss.jpg" alt="Katya Mills">
-          <h3 class="font-Biography-title">Katya Mills</h3>
-          <p class="font-Biography-text">
-            Art Director              
-            <br>
-            Scenography / Styling / Creative Photography / Design              
-          </p>
-          <blockquote>
-            <p class="font-Biography-cit">
-              “The more I deal with the work as something that is my own, as something that is personal, the more successful it is.”
+        <section class="block-Biography">      
+          <img src="img\jared-weiss.jpg" alt="Katya Mills" class="block-Biography-img">
+          <div>
+            <!-- здесь заголовок пришлось упаковать в "дивные скобки" т.к. его надо повернуть... -->
+            <h2 class="font-article-name block-Biography-title">Biography</h2>
+          </div>
+          <div class="block-Biography-text">
+            <h3 class="font-Biography-title">
+              Katya
+                <br>
+              Mills
+            </h3>
+            <p class="font-Biography-text">
+              Art Director              
+              <br>
+              Scenography / Styling / Creative Photography / Design              
             </p>
-          </blockquote>
+            <div class="block-Bigraphy-shortline"></div>
+            <blockquote class="font-Biography-cit">
+              “The more I deal with the work as something that is my own, as something that is personal, the more successful it is.”
+            </blockquote>
+          </div>
         </section>
         <section>
         <!-- в этой секции пока пусто -->
         </section>
-        <hr>
       </article>
       <article class="art_Designers">
         <!-- В этой статье перечисляем наших дизайнеров -->          
