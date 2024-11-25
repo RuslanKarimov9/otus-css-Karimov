@@ -380,7 +380,81 @@ section.block-Designers-itemL > p{
     Статья "Strong_points"
 *****************************************************************************************************    
  */
+.art_Strong_points{
+    /* 
+        Этот раздел по ширине не ограничен, поэтому укажем только высоту по макету - 613px
+    */    
+    height: 613px;
+    /* 
+        Эту инструкцию можно и не указывать, но пусть будет (для "красоты")
+    */
+    margin: 0 auto;
 
+    margin-top: 150px;   
+    /* border: 1px solid;     */
+}
+
+.art_Strong_points > h2{
+    margin: 0;
+    margin-left: 138.3px;
+    /* высота блока - остаток от основного (grid-Strong_points) - 613px-555px = 58px */
+    height: 58px; 
+}
+.grid-Strong_points{
+    /* 
+        Эту секцию сделаем на Grid, хотя она очень похожа на статью "Designers", которая реализована на Flex.
+        Сделаем так для демонстрации различий между Grid и Flex (в реальном проекте следует придерживаться
+        единообразия).
+
+        Следующие настройки - стандартная полоса с прокруткой
+    */
+    display: grid;
+    grid: 1fr / auto-flow 1fr;
+    gap: 2rem;
+    overflow: auto;
+    /* 
+        высота блока - по макету 555px, но указывать её здесь не будем чтобы при масштабировании не появлялся
+        вертикальный скролл. Ограничим её указав размер элементов (см. grid-Strong_points-item)
+    */
+    /* height: 555px; */
+}
+
+.grid-Strong_points-item{
+    box-sizing: border-box;
+    /* стандартный блок - 337px по макету - относительно ширины родителя это 23.4% */
+    width: 23.4vw;
+    /* ограничим высоту элементов (555px - по макету) и учтём появление горизонтального скролла ~20px */
+    height: 535px; 
+
+    /* border: 1px solid blue; */
+}
+
+.grid-Strong_points > img{
+    object-fit: cover;
+}
+
+.grid-Strong_points-item-3{
+    /* этот блок шире - 451px по макету - относительно ширины viewport'а это 31.32% */
+    width: 31.32vw;
+}
+
+.grid-Strong_points-item-3 > h3{
+    margin: 0;
+    text-align: center;
+}
+
+.grid-Strong_points-item-3 > ul{
+    margin: 2rem 0;
+    padding-left: 9vw;
+    /* 
+    поменяем стиль маркеров в списке - none - без маркеров
+    */
+    list-style-type: none;
+}
+
+.grid-Strong_points-item-3{
+    overflow: hidden;
+}
 /* 
 *****************************************************************************************************
     Подвал (footer)
