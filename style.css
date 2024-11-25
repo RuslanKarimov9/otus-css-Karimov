@@ -460,7 +460,31 @@ section.block-Designers-itemL > p{
     Подвал (footer)
 *****************************************************************************************************    
  */ 
+footer{
+    /* 
+        Этот раздел по ширине не ограничен, поэтому укажем только высоту по макету - 168px
+    */    
+    height: 168px;
+    /* 
+        Эту инструкцию можно и не указывать, но пусть будет (для "красоты")
+    */
+    margin: 0 auto;
 
+    margin-top: 150px;   
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0D0D0D;
+    color: #FFFFFF;
+
+    border: 1px solid;            
+}
+
+.Contacts > a{
+    color: #FFFFFF;
+}
 
 /* 
 *****************************************************************************************************
