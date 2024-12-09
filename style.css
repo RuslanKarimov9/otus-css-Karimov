@@ -47,9 +47,6 @@ a{
     width: 70rem;
     justify-content: space-between;
 }
-/*
-    Здесь использовался тэг "body" для задания значений "по-умолчанию" для ряда наследуемых свойств
-*/
 
 .MainMenu_item{
     text-align: center;
