@@ -25,7 +25,7 @@
 <body>
   <header>
       <div class="block-main">
-        <h1 class="font-main-title block_main-title">Mod</h1>
+        <h1 class="font-main-title">Mod</h1>
         <nav class="MainMenu">
           <div class="font-main-menu MainMenu_item"><a href="">Biography</a></div>
           <div class="font-main-menu MainMenu_item"><a href="">Designers</a></div>
@@ -42,35 +42,47 @@
           <p class="font-Hero-text block-Hero-text">Modern Web Studio</p>
         </div>  
       </section>
+
       <article class="art-Biography">
         <!-- В этой статье рассказываем о сотрудниках посекционно -->
         <section class="block-Biography">      
-          <img src="img\jared-weiss.jpg" alt="Katya Mills" class="block-Biography-img">
-          <div>
-            <!-- здесь заголовок пришлось упаковать в "дивные скобки" т.к. его надо повернуть... -->
-            <h2 class="font-article-name block-Biography-title">Biography</h2>
-          </div>
-          <div class="block-Biography-text">
-            <h3 class="font-Biography-title">
-              Katya
-                <br>
-              Mills
-            </h3>
-            <p class="font-Biography-text">
+          <div class="block-Biography-elm block-Biography-desc font-Biography-text">
+            <p>
               Art Director              
               <br>
               Scenography / Styling / Creative Photography / Design              
-            </p>
-            <div class="block-Bigraphy-shortline"></div>
-            <blockquote class="font-Biography-cit">
-              “The more I deal with the work as something that is my own, as something that is personal, the more successful it is.”
-            </blockquote>
+            </p> 
+            <p>
+              Art Director              
+              <br>
+              - Scenography <br> - Styling <br> - Creative Photography <br> - Design              
+            </p>             
+          </div>          
+          <div class="block-Biography-elm block-Biography-title">
+            <!-- здесь заголовок пришлось упаковать в "дивные скобки" т.к. его надо повернуть... -->
+            <h2 class="font-article-name">Biography</h2>
           </div>
+          <blockquote class="block-Biography-elm block-Biography-cit font-Biography-cit">
+            “The more I deal with the work as something that is my own, as something that is personal, the more successful it is.”
+          </blockquote>          
+          <div class="block-Biography-elm block-Bigraphy-shortline">
+            <div></div>
+          </div>
+          <div class="block-Biography-elm block-Biography-text">
+            <h3 class="font-Biography-title">
+              Katya<br>Mills
+            </h3>
+            <h3 class="font-Biography-title">
+              Katya Mills
+            </h3>            
+          </div>
+          <img src="img\jared-weiss.jpg" alt="Katya Mills" class="block-Biography-elm block-Biography-img">
         </section>
         <section>
         <!-- в этой секции пока пусто -->
         </section>
       </article>
+
       <article class="art_Designers">
         <!-- В этой статье перечисляем наших дизайнеров -->          
         <h2 class="font-article-name">Designers</h2>
@@ -202,6 +214,13 @@
           <img class="grid-Strong_points-item" src="img\keghan-crossland.jpg" alt="keghan crossland">
         </div>
       </article>
+
+      <nav class="footer-Menu MainMenu">
+        <div class="font-main-menu MainMenu_item"><a href="">B</a></div>
+        <div class="font-main-menu MainMenu_item"><a href="">D</a></div>
+        <div class="font-main-menu MainMenu_item"><a href="">T</a></div>
+        <div class="font-main-menu MainMenu_item"><a href="">S</a></div>
+      </nav>
   </main>
   <footer>
     <!-- В подвале - контакты -->       
