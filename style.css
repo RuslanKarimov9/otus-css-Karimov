@@ -398,6 +398,14 @@ section.block-Designers-itemL > p{
     height: 58px; 
 }
 .grid-Strong_points{
+    display: flex;
+    align-items: flex-end;
+    gap: 2rem;
+    /*  
+        разрешаем скролл в блоке
+    */
+    overflow: auto;
+
     /* 
         Эту секцию сделаем на Grid, хотя она очень похожа на статью "Designers", которая реализована на Flex.
         Сделаем так для демонстрации различий между Grid и Flex (в реальном проекте следует придерживаться
@@ -405,10 +413,10 @@ section.block-Designers-itemL > p{
 
         Следующие настройки - стандартная полоса с прокруткой
     */
-    display: grid;
-    grid: 1fr / auto-flow 1fr;
-    gap: 2rem;
-    overflow: auto;
+    @supports (display: grid) {
+        display: grid;
+        grid: 1fr / auto-flow 1fr;
+    }
     /* 
         высота блока - по макету 555px, но указывать её здесь не будем чтобы при масштабировании не появлялся
         вертикальный скролл. Ограничим её указав размер элементов (см. grid-Strong_points-item)
