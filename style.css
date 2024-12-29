@@ -101,7 +101,6 @@ a{
     margin: 0 auto;     
     
     margin-top: 150px;
-    /* border: 1px solid; */
 }
 
 .block-Biography{
@@ -111,13 +110,11 @@ a{
     display: flex;
     height: 840px;
     justify-content: center;
-    /* border: 1px solid; */
 }
 
 .block-Biography-img{
     width: 46.4%;  /* 541px/1165px */
     object-fit: cover;
-    /* border: 1px solid; */
 }
 
 .block-Biography-text{
@@ -154,7 +151,6 @@ a{
         размещаем текст
     */
     padding: 0 10rem 0 0;
-    /* border: 1px solid;     */
 }
 
 .block-Bigraphy-shortline{
@@ -182,8 +178,6 @@ a{
     margin: 0 auto;
 
     margin-top: 150px;
-    
-    /* border: 1px solid;     */
 }
 
 .art_Designers > h2{
@@ -245,7 +239,6 @@ section.block-Designers-itemL > p{
     margin: 0 auto;
     height: 760px;
     margin-top: 150px;
-    /* border: 1px solid;     */
 }
 
 .grid-Testimonials{
@@ -358,13 +351,15 @@ section.block-Designers-itemL > p{
     box-sizing: border-box;
     display: flex;
     justify-content: center;
-    align-items: center;
     padding: 0 1rem 0 1rem;
     margin: 0;
     width: 100%;
     height: 50%;
-    overflow: hidden;
-    /* border: 1px solid; */
+
+    p{
+        margin: 3.1rem 0 1rem 0;
+        overflow: hidden;
+    }
 }
 .grid-Testimonials-6 > img{
     margin: 0;
@@ -388,7 +383,6 @@ section.block-Designers-itemL > p{
     margin: 0 auto;
 
     margin-top: 150px;   
-    /* border: 1px solid;     */
 }
 
 .art_Strong_points > h2{
@@ -430,8 +424,6 @@ section.block-Designers-itemL > p{
     width: 23.4vw;
     /* ограничим высоту элементов (555px - по макету) и учтём появление горизонтального скролла ~20px */
     height: 535px; 
-
-    /* border: 1px solid blue; */
 }
 
 .grid-Strong_points > img{
@@ -483,8 +475,6 @@ footer{
     align-items: center;
     background-color: #0D0D0D;
     color: #FFFFFF;
-
-    border: 1px solid;            
 }
 
 .Contacts > a{
