@@ -1,0 +1,15 @@
+.strong-points-block__item{
+    box-sizing: border-box;
+    /* стандартный блок - 337px по макету */
+    width: 337px;
+    /* ограничим высоту элементов (555px - по макету) и учтём появление горизонтального скролла ~20px */
+    height: 535px; 
+
+    @media screen and (max-width: 1024px) {
+        gap: 1rem;
+        /* ограничим высоту элементов (455px - по макету) и учтём появление горизонтального скролла ~20px */
+        height: 435px; 
+        width: 310px;
+    }
+    outline: var(--outline) solid limegreen; 
+}

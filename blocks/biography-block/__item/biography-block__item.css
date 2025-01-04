@@ -1,0 +1,16 @@
+.biography-block__item{
+    margin: 0; /* чтобы сбросить встроенные отступы */
+    box-sizing: border-box;
+    /* в полноэкранном режиме дочерние элементы расставим "вручную" */
+    position: absolute; 
+
+    div:nth-child(2){
+        display: none;
+    }
+
+    @media screen and (max-width: 1024px){
+        /* в мобильном режиме - используем особенности Flex-алгоритмов */
+        position: static;
+    };
+    outline: var(--outline) solid limegreen;    
+}

@@ -1,0 +1,25 @@
+.hero-block__content{
+    /* объявляем собственные параметры */
+    --cBlockHeight: 360px;
+
+    display: inline-block;
+    box-sizing: border-box;    
+    background-color: white;
+    width: 690px;
+    height: var(--cBlockHeight); 
+    padding-top: 110px;   
+
+    @media screen and (max-width: 1024px) {
+        /* меняем размеры */
+        width: 100%;
+        --cBlockHeight: 344px;
+
+        /* ближайший якорь - :root */
+        position: absolute;
+
+        /* меняем расположение */        
+        top: 0px;
+        left: 0px;
+    }
+    outline: var(--outline) solid limegreen;  
+}

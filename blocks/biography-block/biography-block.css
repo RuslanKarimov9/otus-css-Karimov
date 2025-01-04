@@ -1,0 +1,21 @@
+.biography-block{
+    /*
+        "Базовое" значение ширины статьи (значение по макету) = 1165px
+        Для придания "резиновости" статье выставляем ширину в %: 81% = 1165px/1440px
+        Примечание: делаем это здесь т.к. требуется единообразно расположить 
+                    все её секции (см. класс "biography-block__section")
+    */
+    width: 81vw;
+    max-width: var(--desktop-maxWidth);
+    /* Повторно (под новую ширину) центрируем. */
+    margin: 0 auto;        
+    margin-top: var(--desktop-margin-top);
+
+    @media screen and (max-width: 1024px) {
+        /* меняем размеры */
+        width: 100%;
+
+        margin: 0; 
+        margin-top: var(--mobil-margin-top);
+    }    
+}

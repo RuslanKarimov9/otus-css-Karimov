@@ -1,0 +1,38 @@
+.footer-block{
+    /* объявляем собственные параметры */
+    --cBlockHeight: 168px;
+    --outline: 0px; 
+
+    /* 
+        Этот раздел по ширине не ограничен - 100%, высота по макету - 168px
+    */    
+    max-width: var(--desktop-maxWidth);
+    height: var(--cBlockHeight);
+    /* Эту инструкцию можно и не указывать, но пусть будет (для "красоты") */
+    margin: 0 auto;
+    margin-top: var(--desktop-margin-top);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0D0D0D;
+    color: #FFFFFF;
+
+    @media screen and (max-width: 1024px) {
+        /* меняем размеры */
+        max-width: 100%;
+        min-width: 100%;
+        --cBlockHeight: 193px;        
+        margin: 0;  
+        margin-top: var(--mobil-margin-top);
+        
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+
+        position: relative;
+    }     
+
+    outline: var(--outline) solid limegreen;  
+}

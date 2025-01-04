@@ -1,0 +1,18 @@
+header{
+    @media screen and (max-width: 1024px) {
+        display: none;
+    }
+}
+
+.header-block{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: var(--desktop-maxWidth);
+    margin: 0 auto;
+
+    h1{
+        padding-left: 2rem;
+    }    
+}

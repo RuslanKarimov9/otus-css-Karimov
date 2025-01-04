@@ -1,0 +1,33 @@
+.testimonials-block__item-1{
+    grid-area: 1 / 2 / 1 / 2;
+    p{
+        --tW: calc(var(--cBlockHeight)/3);
+        --tH: 4rem;
+        --tXY: calc( (var(--tH) - var(--tW))/2 );
+
+        box-sizing: border-box;
+        margin: 0;
+        margin-left: var(--tH);
+        padding-left: var(--tH);
+
+        width: var(--tW);
+        height: var(--tH);
+        transform: rotate(-90deg) translateX(var(--tXY)) translateY(var(--tXY));
+        -webkit-transform: rotate(-90deg) translateX(var(--tXY)) translateY(var(--tXY));
+        -moz-transform: rotate(-90deg) translateX(var(--tXY)) translateY(var(--tXY));
+        -ms-transform: rotate(-90deg) translateX(var(--tXY)) translateY(var(--tXY));
+        -o-transform: rotate(-90deg) translateX(var(--tXY)) translateY(var(--tXY));
+}
+
+    @media screen and (max-width: 1024px) {
+        grid-area: link1;
+        p{
+            transform: none;
+            width: 100%;
+            height: 100%;   
+            padding-top: 1rem;   
+            padding-left: 1rem;   
+            text-align: left;        
+        }
+    }    
+}

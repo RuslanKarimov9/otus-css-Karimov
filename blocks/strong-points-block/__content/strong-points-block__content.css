@@ -1,0 +1,36 @@
+.strong-points-block__content{
+    display: flex;
+    align-items: flex-end;
+    gap: 2rem;
+    /*  
+        разрешаем скролл в блоке
+    */
+    overflow: auto;
+    margin-left: 2rem;
+    margin-right: 2rem;    
+
+    /* 
+        Эту секцию сделаем на Grid, хотя она очень похожа на статью "Designers", которая реализована на Flex.
+        Сделаем так для демонстрации различий между Grid и Flex (в реальном проекте следует придерживаться
+        единообразия).
+
+        Следующие настройки - стандартная полоса с прокруткой
+    */
+    @supports (display: grid) {
+        display: grid;
+        grid: 1fr / auto-flow 1fr;
+    }
+    /* 
+        высота блока - по макету 555px, но указывать её здесь не будем чтобы при масштабировании не появлялся
+        вертикальный скролл. Ограничим её указав размер элементов (см. strong-points-block__item)
+    */
+
+    img{
+        object-fit: cover;
+    }
+
+    @media screen and (max-width: 1024px) {
+        gap: 1rem;
+    }
+    outline: var(--outline) solid limegreen; 
+}
