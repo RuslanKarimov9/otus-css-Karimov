@@ -1,22 +1,16 @@
-.biography-block__section{
-    /* Настройки полноэкранного макета */
-    
-        /* объявляем собственные параметры */
-        --cBlockHeight: 840px;
-        --outline: 0px;
-        /* обявляем контейнер как якорь для абсолютного позиционирования дочерних элементов */
-        position: relative; 
-    
-        margin: 0;
-        height: var(--cBlockHeight);
-        
-        @media screen and (max-width: 1024px) {
-            width: 100%;
-            --cBlockHeight: 952px;
-    
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-        };
-        outline: var(--outline) solid limegreen;        
-    }
+.biography-block__section {
+  --cBlockHeight: 840px;
+  position: relative;
+  margin: 0;
+  height: var(--cBlockHeight);
+  outline: 1px solid limegreen;
+}
+@media screen and (max-width: 1024px) {
+  .biography-block__section {
+    width: 100%;
+    --cBlockHeight: 952px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}/*# sourceMappingURL=biography-block__section.css.map */

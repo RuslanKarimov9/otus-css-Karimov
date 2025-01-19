@@ -1,0 +1,94 @@
+// 1)
+/// Карта Z-index’ов, собирает все Z-слои приложения
+/// @access private
+/// @type Map
+/// @prop {String} key - Имя слоя
+/// @prop {Number} valye - значение Z, соответствующее ключу
+/// Сопутствующая функция - "z"
+$z-indexes: (
+    'modal': 5000,      // для модальных окон
+    'dropdown': 4000,   // для выпадающих списков
+    'default': 1,       // значение по-умолчанию
+    'below': -1,        // для подложки
+) !default;
+@function z($layer) {
+    @if not map-has-key($z-indexes, $layer) {
+        @error 'нет слоя с именем '#{$layer};
+    }
+
+    @return map-get($z-indexes, $layer);
+};
+
+// 2)
+/// Карта точек адаптации (@media)
+/// @access private
+/// @type Map
+/// @prop {String} key - Имя точки 
+/// @prop {Number} valye - размер экрана, соответствующее ключу
+/// --
+/// Сопутствующая примесь - "screenbreak"
+$breakpoints: (
+    'small': 700px,
+    'medium': 1024px,
+    'large': 1440px,
+) !default;
+/// Примесь для работы с картой точек адаптации ($breakpoints)
+/// Использование:
+///   вызов должен осуществлятся по порядку от большего к меньшему:
+///         @include screenbreak('large') { ... };
+///         @include screenbreak('medium') { ... };
+///         @include screenbreak('small') { ... };
+@mixin screenbreak($breakpoint){
+    $value: map-get($breakpoints, $breakpoint);
+    @if $value {    
+        @media screen and (max-width: $value) { @content }
+    }
+    @else {
+        @error 'Неизвестная точка адаптации ('#{$breakpoint}').'
+    }
+};
+
+// 3)
+/// стандартный отступ секций
+$margin-top: (
+    'small': 10px,
+    'medium': 80px,
+    'large': 150px,
+) !default;
+
+// 4)
+/// css-переменные
+/// Использование:
+///     // объявляем css-переменную и назначаем ей значение
+///     @include set-css-var('qqq', 440px);
+///     // теперь переменную qqq можно использовать в любом классе:
+///     top: get-css-var('qqq');
+@mixin set-css-var($var-name, $var-value) {
+    --#{$var-name}: #{$var-value};
+};
+@function get-css-var($var-name) {
+    @return var(--#{$var-name});
+};
+
+// 5)
+/// примесь поворачивает блок на 90 градусов против часовой стрелки
+/// Параметры: 
+///     $BlockWidth     ширина блока (какой она должна быть до поворота)
+///     $BlockHeight    высота блока (какой она должна быть до поворота)
+@mixin vertical-rotate($BlockWidth, $BlockHeight) {
+    // координаты
+    $tXY: calc( ($BlockHeight - $BlockWidth)/2 );
+
+    // подстройка блока
+    margin: 0;
+    margin-left: $BlockHeight;
+    width: $BlockWidth;
+    height: $BlockHeight;
+
+    // поворот
+    transform: rotate(-90deg) translateX($tXY) translateY($tXY);
+    -webkit-transform: rotate(-90deg) translateX($tXY) translateY($tXY);
+    -moz-transform: rotate(-90deg) translateX($tXY) translateY($tXY);
+    -ms-transform: rotate(-90deg) translateX($tXY) translateY($tXY);
+    -o-transform: rotate(-90deg) translateX($tXY) translateY($tXY);
+};

@@ -1,29 +1,25 @@
-.footer-block__logo{
-    font-family: 'Roboto';
-    font-size: 1.8rem;
-    font-weight: 500;
-    line-height: 2.109rem;
-    text-align: center;   
-    
-    @media screen and (max-width: 1024px) {
-        position: absolute;
-        margin: 0;
-        width: calc(100% - 1rem);
-        top: 30px;
-        left: 0;
-        text-align: right;
-    }
+.footer-block__logo {
+  font-family: "Roboto";
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 2.109rem;
+  text-align: center;
+}
+@media screen and (max-width: 1024px) {
+  .footer-block__logo {
+    position: absolute;
+    margin: 0;
+    width: calc(100% - 1rem);
+    top: 30px;
+    left: 0;
+    text-align: right;
+  }
 }
 
-/* 
-*****************************************************************************************************    
-    Модификаторы 
-*****************************************************************************************************        
-*/
-.footer-block__logo_font-b{
-    font-family: 'Roboto';
-    font-size: 2.4rem;
-    font-weight: 900;
-    line-height: 2.813rem;
-    text-align: center;
-}
+.footer-block__logo_font-b {
+  font-family: "Roboto";
+  font-size: 2.4rem;
+  font-weight: 900;
+  line-height: 2.813rem;
+  text-align: center;
+}/*# sourceMappingURL=footer-block__logo.css.map */

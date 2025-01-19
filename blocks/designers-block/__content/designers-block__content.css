@@ -1,87 +1,70 @@
-.designers-block__content{
-    /* Настройки полноэкранного макета */  
-        display: flex;
-        flex-direction: row;
-        align-items: flex-end;
-        gap: 2rem;
-        height: 100%;
-        margin-left: 2rem;
-        margin-right: 2rem;
-        /* разрешаем скролл в блоке и, как следствие, фиксированную ширину дочерних элементов */
-        overflow: auto;
-    
-        @media screen and (max-width: 1024px) {
-            margin-left: 1rem;
-            gap: 1rem;
-        }
-        outline: var(--outline) solid limegreen; 
-    }
-    .designers-block__content > section{
-        display: flex;
-        flex-direction: column;
-        /* стандартный блок - 337px по макету */
-        max-width: 337px;
-        min-width: 337px;
-        img{
-            object-fit: cover;
-            height: 80%;
-        }
-        p{
-            overflow: hidden;
-        }
-    
-        @media screen and (max-width: 1024px) {
-            max-width: 310px;
-            min-width: 310px;
-            /* так "включаем" использование параметра высоты в дочерних элементах */
-            height: 100%;
-        }    
-    }
-    
-
-    /* 
-    *****************************************************************************************************    
-        Модификаторы 
-    *****************************************************************************************************        
-    */
-    .designers-block__content_font{
-        font-family: 'Roboto';
-        font-size: 1.6rem;
-        font-weight: 400;
-        line-height: 1.875rem;
-    }
-    
-    .designers-block__content_font-b{
-        font-family: 'Roboto';
-        font-size: 1.6rem;
-        font-weight: 700;
-        line-height: 1.875rem;
-    }
-
-/* 
-Здесь обращение к классу "designers-block__item_size_L" выполняется не напрямую, а с добавлением
-селектора тэга. Это сделано для повышения его веса чтобы перекрыть настройки селектора 
-".designers-block__content > section" (их веса выравниваются, но за счёт каскадности перекрытие происходит)
-
-ВНИМАНИЕ!
-    Необходимо отметить, что такой приём хотя и допускается синтаксически, но его использование - 
-    плохое решение. В особенности, для малых проектов, когда можно достаточно быстро внести изменения,
-    позволяющие отказаться от использования возможностей специфичности
-*/
-section.designers-block__content_size_L{
-    /* увеличенный блок - 572px по макету - относительно ширины vieport'а это 39.72% */
-    max-width: 572px;
-    min-width: 572px;
-    /* К сожалению не придумал ничего иного, кроме как прямое указание отступа ( */
-    p{
-        margin-left: 237px;
-    }
-    
-    @media screen and (max-width: 1024px) {
-        max-width: 310px;
-        min-width: 310px;
-        p{
-            margin-left: 0;
-        }
-    }
+.designers-block__content {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  gap: 2rem;
+  height: 100%;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  overflow: auto;
+  outline: 1px solid limegreen;
 }
+@media screen and (max-width: 1024px) {
+  .designers-block__content {
+    margin-left: 1rem;
+    gap: 1rem;
+  }
+}
+
+.designers-block__content > section {
+  display: flex;
+  flex-direction: column;
+  max-width: 337px;
+  min-width: 337px;
+}
+.designers-block__content > section img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 80%;
+}
+.designers-block__content > section p {
+  overflow: hidden;
+}
+@media screen and (max-width: 1024px) {
+  .designers-block__content > section {
+    max-width: 310px;
+    min-width: 310px;
+    height: 100%;
+  }
+}
+
+.designers-block__content_font {
+  font-family: "Roboto";
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.875rem;
+}
+
+.designers-block__content_font-b {
+  font-family: "Roboto";
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.875rem;
+}
+
+section.designers-block__content_size_L {
+  max-width: 572px;
+  min-width: 572px;
+}
+section.designers-block__content_size_L p {
+  margin-left: 237px;
+}
+@media screen and (max-width: 1024px) {
+  section.designers-block__content_size_L {
+    max-width: 310px;
+    min-width: 310px;
+  }
+  section.designers-block__content_size_L p {
+    margin-left: 0;
+  }
+}/*# sourceMappingURL=designers-block__content.css.map */

@@ -1,24 +1,16 @@
-.strong-points-block{
-    /* объявляем собственные параметры */
-    --cBlockHeight: 613px;
-    --outline: 0px;    
-    
-    /* 
-        Этот раздел по ширине не ограничен - 100%, высота по макету - 613px
-    */    
-    max-width: var(--desktop-maxWidth);
-    height: var(--cBlockHeight);
-    /* Эту инструкцию можно и не указывать, но пусть будет (для "красоты") */
-    margin: 0 auto;
-    margin-top: var(--desktop-margin-top);
-
-    @media screen and (max-width: 1024px) {
-        /* меняем размеры */
-        width: 100%;
-        --cBlockHeight: 503px;        
-
-        margin: 0; 
-        margin-top: var(--mobil-margin-top);  
-    }     
-    outline: var(--outline) solid limegreen;  
+.strong-points-block {
+  max-width: 1440px;
+  height: 613px;
+  margin: 0 auto;
+  margin-top: 150px;
+  outline: 1px solid limegreen;
 }
+@media screen and (max-width: 1024px) {
+  .strong-points-block {
+    max-width: 1024px;
+    width: 100%;
+    height: 503px;
+    margin: 0 auto;
+    margin-top: 80px;
+  }
+}/*# sourceMappingURL=strong-points-block.css.map */

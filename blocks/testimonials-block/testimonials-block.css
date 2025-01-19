@@ -1,26 +1,18 @@
-.testimonials-block{
-    --outline: 0px;    
-    box-sizing: border-box;
-    /*
-        "Базовое" значение ширины статьи (значение по макету) = 1400px
-        Для придания "резиновости" статье выставляем ширину в %: 97.22% = 1400px/1440px
-    */
-    width: 97.22vw; /* 1400px/1440px */
-    max-width: var(--desktop-maxWidth);
-
-    /* Повторно (под новую ширину) центрируем. */
-    margin: 0 auto;
-    margin-top: var(--desktop-margin-top);
-
-    @media screen and (max-width: 1024px) {
-        /* меняем размеры */
-        width: 100%;
-        margin: 0;
-        margin-top: var(--mobil-margin-top); 
-
-        /* ввёл эти отступы чтобы избежать появления гориз. скролла. Причины появления так и не нашёл */
-        padding-left: 1rem;
-        padding-right: 1rem;        
-    }     
-    outline: var(--outline) solid limegreen;     
+.testimonials-block {
+  max-width: 1440px;
+  width: 97.22vw;
+  margin: 0 auto;
+  margin-top: 150px;
+  box-sizing: border-box;
+  outline: 1px solid limegreen;
 }
+@media screen and (max-width: 1024px) {
+  .testimonials-block {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 80px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}/*# sourceMappingURL=testimonials-block.css.map */

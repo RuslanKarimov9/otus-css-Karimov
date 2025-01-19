@@ -1,16 +1,17 @@
-.footer-block__contacts{
-    font-family: 'Roboto';
-    font-size: 1.6rem;
-    font-weight: 400;
-    line-height: 2.6rem;
-
-    @media screen and (max-width: 1024px) {
-        margin: 0; 
-        margin-top: 70px;
-        margin-left: 1rem;
-    }
-}  
-
-.footer-block__contacts > a{
-    color: #FFFFFF;
+.footer-block__contacts {
+  font-family: "Roboto";
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.6rem;
 }
+@media screen and (max-width: 1024px) {
+  .footer-block__contacts {
+    margin: 0;
+    margin-top: 70px;
+    margin-left: 1rem;
+  }
+}
+
+.footer-block__contacts > a {
+  color: #FFFFFF;
+}/*# sourceMappingURL=footer-block__contacts.css.map */

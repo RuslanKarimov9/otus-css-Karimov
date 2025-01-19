@@ -1,0 +1,27 @@
+@import '../../../abstracts/_sys.scss';
+@import '../../../abstracts/_variables.scss';
+@import '../../../abstracts/_mixins.scss';
+
+.biography-block__item-img{
+    // height: var(--cBlockHeight);
+    // min-width: 48%; 
+    // max-width: 48%;
+    // object-fit: cover;
+    
+    // @media screen and (max-width: 1024px){
+    //     min-width: 100%;
+    //     max-width: 100%;    
+    //     height: 40%;
+    // }
+
+    height: get-css-var('cBlockHeight');
+    min-width: 48%; 
+    max-width: 48%;
+    object-fit: cover;
+    
+    @include screenbreak('medium'){
+        min-width: 100%;
+        max-width: 100%;    
+        height: 40%;
+    }    
+}

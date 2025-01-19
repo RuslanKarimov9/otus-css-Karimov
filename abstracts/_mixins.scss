@@ -1,0 +1,49 @@
+@import '_sys.scss';
+@import '_variables.scss';
+
+/// для тестирования блоков
+$outline-size: 1px;
+$outline-color: limegreen;
+@mixin showborders {
+    @if $debug-flag {
+        outline: $outline-size solid $outline-color;  
+    }
+};
+
+/// отступы и размеры для секций
+@mixin set-as-section($breakpoint, $width, $height, $use-margin-top: true) {
+    max-width: map-get($breakpoints, $breakpoint);
+
+    // width
+    @if type-of($width) == 'string' {
+        @if $width != '' { width: get-css-var($width)}
+    } @else {
+        @if $width > 0 { width: $width; };
+    };
+    // height
+    @if type-of($height) == 'string' {
+        @if $height != '' { height: get-css-var($height)}
+    } @else {
+        @if $height > 0 { height: $height; };
+    };    
+
+    // Повторно (под новую ширину) центрируем. 
+    margin: 0 auto;      
+    
+    // margin
+    @if $use-margin-top {
+        margin-top: map-get($margin-top, $breakpoint);
+    }
+};
+
+// *****************************************************************************************************    
+//     Типографика
+// ***************************************************************************************************** 
+@mixin set-font($family, $size, $weight, $line-height: null) {
+    font-family: $family;
+    font-size: $size;
+    font-weight: $weight;
+    @if $line-height {
+        line-height: $line-height; 
+    };
+};

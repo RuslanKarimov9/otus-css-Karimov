@@ -1,15 +1,14 @@
-.strong-points-block__title{
-    margin: 0;
-    margin-left: 13.8rem;
-    /* высота блока - остаток от основного (strong-points-block__content) - 613px-555px = 58px */
-    height: 58px; 
-
-    font-family: 'Roboto';
-    font-size: 2.4rem;
-    font-weight: 700;
-    
-    @media screen and (max-width: 1024px) {
-        margin-left: 1rem;
-        height: 48px; 
-    }
+.strong-points-block__title {
+  margin: 0;
+  margin-left: 13.8rem;
+  height: 58px;
+  font-family: "Roboto";
+  font-size: 2.4rem;
+  font-weight: 700;
 }
+@media screen and (max-width: 1024px) {
+  .strong-points-block__title {
+    margin-left: 1rem;
+    height: 48px;
+  }
+}/*# sourceMappingURL=strong-points-block__title.css.map */

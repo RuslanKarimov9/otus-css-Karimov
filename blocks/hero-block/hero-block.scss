@@ -1,0 +1,46 @@
+@import '../../abstracts/_sys.scss';
+@import '../../abstracts/_variables.scss';
+@import '../../abstracts/_mixins.scss';
+
+.hero-block{
+    // --cBlockHeight: 630px;
+    // --outline: px;
+
+    // box-sizing: border-box;
+    // background-image: url("../../img/inside-weather.jpg"); 
+    // background-size: cover;
+    // background-position: center;
+    // background-repeat: no-repeat;    
+    // text-align: center;
+    // padding-top: 135px;
+
+    // max-width: var(--desktop-maxWidth);
+    // margin: 0 auto;  
+    // height: var(--cBlockHeight);   
+
+    // @media screen and (max-width: 1024px) {
+    //     width: 100%;
+    //     --cBlockHeight: 420px;
+
+    //     margin-top: 344px;
+    // }
+    // outline: var(--outline) solid limegreen;  
+
+    @include set-as-section('large', 0, 630px, false);
+
+    box-sizing: border-box;
+    background-image: url("../../img/inside-weather.jpg"); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;    
+    text-align: center;
+    padding-top: 135px;
+
+    @include screenbreak('medium')
+    {
+        @include set-as-section('medium', 100%, 420px, false); 
+        margin-top: 344px;
+    };
+    
+    @include showborders;
+}

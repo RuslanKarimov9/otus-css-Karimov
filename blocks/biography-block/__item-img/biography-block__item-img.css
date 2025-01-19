@@ -1,12 +1,14 @@
-.biography-block__item-img{
-    height: var(--cBlockHeight);
-    min-width: 48%; /* 541px/1165px = 46.4% */
-    max-width: 48%;
-    object-fit: cover;
-    
-    @media screen and (max-width: 1024px){
-        min-width: 100%;
-        max-width: 100%;    
-        height: 40%;
-    }
+.biography-block__item-img {
+  height: var(--cBlockHeight);
+  min-width: 48%;
+  max-width: 48%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
+@media screen and (max-width: 1024px) {
+  .biography-block__item-img {
+    min-width: 100%;
+    max-width: 100%;
+    height: 40%;
+  }
+}/*# sourceMappingURL=biography-block__item-img.css.map */

@@ -1,7 +1,6 @@
-.testimonials-block__item{
-    box-sizing: border-box;
-    width: 100%;
-    height: 100%;
-
-    outline: var(--outline) solid limegreen;
-}
+.testimonials-block__item {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  outline: 1px solid limegreen;
+}/*# sourceMappingURL=testimonials-block__item.css.map */

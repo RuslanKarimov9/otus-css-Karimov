@@ -1,16 +1,14 @@
-.biography-block__item{
-    margin: 0; /* чтобы сбросить встроенные отступы */
-    box-sizing: border-box;
-    /* в полноэкранном режиме дочерние элементы расставим "вручную" */
-    position: absolute; 
-
-    div:nth-child(2){
-        display: none;
-    }
-
-    @media screen and (max-width: 1024px){
-        /* в мобильном режиме - используем особенности Flex-алгоритмов */
-        position: static;
-    };
-    outline: var(--outline) solid limegreen;    
+.biography-block__item {
+  margin: 0;
+  box-sizing: border-box;
+  position: absolute;
+  outline: 1px solid limegreen;
 }
+.biography-block__item div:nth-child(2) {
+  display: none;
+}
+@media screen and (max-width: 1024px) {
+  .biography-block__item {
+    position: static;
+  }
+}/*# sourceMappingURL=biography-block__item.css.map */

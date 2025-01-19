@@ -1,45 +1,43 @@
-.biography-block__item-text{
-    display: flex;
-    left: calc(48% + 100px);
-    height: 440px;
-    min-width: calc(52% - 100px); 
-    max-width: calc(52% - 100px);
-
-    h3{
-        padding-top: 9rem;
-        padding-left: 5rem;
-
-        font-family: 'Playfair Display';
-        font-size: 8.6rem;
-        font-weight: 500;
-        line-height: 11.464rem;        
-    }
-    h3:nth-child(1){
-        display: block;
-    }
-    h3:nth-child(2){
-        display: none;
-    }
-
-    @media screen and (max-width: 1024px){
-        flex-basis: 90%; /* т.к. flex-direction = row, то таким образом задаём ширину элемента */
-        height: 15%;
-        max-width: 100%;    
-        align-items: center;
-
-        h3{
-            padding-top: 0rem;
-            padding-left: 0rem;
-
-            font-size: 6.4rem;
-            font-weight: 400;
-            line-height: 8.531rem;              
-        };   
-        h3:nth-child(1){
-            display: none;
-        }
-        h3:nth-child(2){
-            display: block;
-        }               
-    }
+.biography-block__item-text {
+  display: flex;
+  left: calc(48% + 100px);
+  height: 440px;
+  min-width: calc(52% - 100px);
+  max-width: calc(52% - 100px);
 }
+.biography-block__item-text h3 {
+  padding-top: 9rem;
+  padding-left: 5rem;
+  font-family: "Playfair Display";
+  font-size: 8.6rem;
+  font-weight: 500;
+  line-height: 11.464rem;
+}
+.biography-block__item-text h3:nth-child(1) {
+  display: block;
+}
+.biography-block__item-text h3:nth-child(2) {
+  display: none;
+}
+@media screen and (max-width: 1024px) {
+  .biography-block__item-text {
+    flex-basis: 90%;
+    height: 15%;
+    max-width: 100%;
+    align-items: center;
+  }
+  .biography-block__item-text h3 {
+    padding-top: 0rem;
+    padding-left: 0rem;
+    font-family: "Playfair Display";
+    font-size: 6.4rem;
+    font-weight: 400;
+    line-height: 8.531rem;
+  }
+  .biography-block__item-text h3:nth-child(1) {
+    display: none;
+  }
+  .biography-block__item-text h3:nth-child(2) {
+    display: block;
+  }
+}/*# sourceMappingURL=biography-block__item-text.css.map */

@@ -1,0 +1,8 @@
+@import '../../../abstracts/_sys.scss';
+@import '../../../abstracts/_variables.scss';
+@import '../../../abstracts/_mixins.scss';
+
+.hero-block__title{
+    margin:  0 auto;
+    @include set-font($font-hb__title...);
+}

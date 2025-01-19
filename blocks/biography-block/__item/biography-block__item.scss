@@ -1,0 +1,23 @@
+@import '../../../abstracts/_sys.scss';
+@import '../../../abstracts/_variables.scss';
+@import '../../../abstracts/_mixins.scss';
+
+.biography-block__item{
+    // чтобы сбросить встроенные отступы 
+    margin: 0; 
+    box-sizing: border-box;
+    // в полноэкранном режиме дочерние элементы расставим "вручную" 
+    position: absolute; 
+
+    div:nth-child(2){
+        display: none;
+    }
+
+    @include screenbreak('medium')
+    {
+        // в мобильном режиме - используем особенности Flex-алгоритмов
+        position: static;
+    }
+    
+    @include showborders; 
+}
