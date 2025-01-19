@@ -1,0 +1,35 @@
+@import '../../abstracts/_sys.scss';
+@import '../../abstracts/_variables.scss';
+@import '../../abstracts/_mixins.scss';
+
+.biography-block{
+    /*
+        "Базовое" значение ширины статьи (значение по макету) = 1165px
+        Для придания "резиновости" статье выставляем ширину в %: 81% = 1165px/1440px
+        Примечание: делаем это здесь т.к. требуется единообразно расположить 
+                    все её секции (см. класс "biography-block__section")
+    */
+
+    // width: 81vw;
+    // max-width: var(--desktop-maxWidth);
+    
+    // margin: 0 auto;        
+    // margin-top: var(--desktop-margin-top);
+    
+    // @media screen and (max-width: 1024px) {
+    //     width: 100%;
+
+    //     margin: 0; 
+    //     margin-top: var(--mobil-margin-top);
+    // }    
+
+
+    @include set-as-section('large', 81vw, 0);
+
+    @include screenbreak('medium')
+    {
+        @include set-as-section('medium', 100%, 0);        
+    };
+    
+    @include showborders;     
+}

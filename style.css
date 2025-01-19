@@ -1,12 +1,103 @@
-html{
-    font-size: 62.5%; /*10px*/
-    /* "Базовое" значение ширины сайта (значение по макету) = 1440px = 144rem */
-}
+/* 
+*****************************************************************************************************
+    Блок "Заголовок"
+*****************************************************************************************************    
+ */
+@import url(/blocks/header-block/header-block.css);
+@import url(/blocks/header-block/__title/header-block__title.css);
+/* 
+*****************************************************************************************************
+    Блок "Меню"
+*****************************************************************************************************    
+ */
+@import url(/blocks/main-menu/main-menu.css);
+@import url(/blocks/main-menu/__item/main-menu__item.css);
+/* 
+*****************************************************************************************************
+    Блок "Hero"
+*****************************************************************************************************    
+ */
+@import url(/blocks/hero-block/hero-block.css);
+@import url(/blocks/hero-block/__content/hero-block__content.css);
+@import url(/blocks/hero-block/__title/hero-block__title.css);
+@import url(/blocks/hero-block/__text/hero-block__text.css);
+/* 
+*****************************************************************************************************
+    Статья "Biography"
+*****************************************************************************************************    
+ */
+@import url(/blocks/biography-block/biography-block.css);
+@import url(/blocks/biography-block/__section/biography-block__section.css);
+@import url(/blocks/biography-block/__item/biography-block__item.css);
+@import url(/blocks/biography-block/__item-desc/biography-block__item-desc.css);
+@import url(/blocks/biography-block/__item-title/biography-block__item-title.css);
+@import url(/blocks/biography-block/__item-cit/biography-block__item-cit.css);
+@import url(/blocks/biography-block/__item-shortline/biography-block__item-shortline.css);
+@import url(/blocks/biography-block/__item-text/biography-block__item-text.css);
+@import url(/blocks/biography-block/__item-img/biography-block__item-img.css);
+/* 
+*****************************************************************************************************
+    Статья "Designers"
+*****************************************************************************************************    
+ */
+@import url(/blocks/designers-block/designers-block.css);
+@import url(/blocks/designers-block/__title/designers-block__title.css);
+@import url(/blocks/designers-block/__content/designers-block__content.css);
+/* 
+*****************************************************************************************************
+    Статья "Testimonials"
+*****************************************************************************************************    
+ */
+@import url(/blocks/testimonials-block/testimonials-block.css);
+@import url(/blocks/testimonials-block/__content/testimonials-block__content.css);
+@import url(/blocks/testimonials-block/__item/testimonials-block__item.css);
+@import url(/blocks/testimonials-block/__item-1/testimonials-block__item-1.css);
+@import url(/blocks/testimonials-block/__item-2/testimonials-block__item-2.css);
+@import url(/blocks/testimonials-block/__item-3/testimonials-block__item-3.css);
+@import url(/blocks/testimonials-block/__item-4/testimonials-block__item-4.css);
+@import url(/blocks/testimonials-block/__item-5/testimonials-block__item-5.css);
+@import url(/blocks/testimonials-block/__item-6/testimonials-block__item-6.css);
+/* 
+*****************************************************************************************************
+    Статья "Strong_points"
+*****************************************************************************************************    
+ */
+@import url(/blocks/strong-points-block/strong-points-block.css);
+@import url(/blocks/strong-points-block/__title/strong-points-block__title.css);
+@import url(/blocks/strong-points-block/__content/strong-points-block__content.css);
+@import url(/blocks/strong-points-block/__item/strong-points-block__item.css);
+@import url(/blocks/strong-points-block/__item-3/strong-points-block__item-3.css);
+/* 
+*****************************************************************************************************
+    Подвал (footer)
+*****************************************************************************************************    
+ */ 
+@import url(/blocks/footer-block/footer-block.css);
+@import url(/blocks/footer-block/__contacts/footer-block__contacts.css);
+@import url(/blocks/footer-block/__phone/footer-block__phone.css);
+@import url(/blocks/footer-block/__mail/footer-block__mail.css);
+@import url(/blocks/footer-block/__logo/footer-block__logo.css);
+@import url(/blocks/footer-block/__pricing/footer-block__pricing.css);
+
+
 /*
     Здесь использовался тэг "html" т.к. таким образом проще всего задать "опорное" значение для свойства "font-size". 
     Это значение удобно использовать в font-ориентированных классах как единицу (1rem)
 */
+html{
+    font-size: 62.5%; /*10px*/
 
+    /* "Базовое" значение ширины сайта (значение по макету) = 1440px = 144rem */
+
+    --mobil-margin-top: 80px;
+    --desktop-margin-top: 150px;
+    --mobil-maxWidth: 1024px; /* iPadPro - 1024 X 1366 */
+    --desktop-maxWidth: 1440px;
+}
+
+/*
+    Здесь использовался тэг "body" для задания значений "по-умолчанию" для ряда наследуемых свойств
+*/
 body{
     font-family: 'Roboto', sans-serif;
     font-size: 2rem;
@@ -17,9 +108,6 @@ body{
     */    
     margin: 0 auto;
 }
-/*
-    Здесь использовался тэг "body" для задания значений "по-умолчанию" для ряда наследуемых свойств
-*/
 
 /* 
     так сбрасываем стандартный стиль ссылок (тэг <a></a>) 
@@ -27,584 +115,4 @@ body{
 a{
     text-decoration: none;
     color: black;
-}
-
-.block-main{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.block_main-title{
-    padding-left: 2rem;
-}
-
-.MainMenu{
-    /* 
-        Меню простое, поэтому делаем его на флексе
-     */    
-    display: flex;
-    width: 70rem;
-    justify-content: space-between;
-}
-
-.MainMenu_item{
-    text-align: center;
-    width: 16rem;   
-}
-
-.Hero{
-    box-sizing: border-box;
-    background-image: url("../img/inside-weather.jpg"); 
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;    
-    text-align: center;
-    height: 630px;    
-    padding-top: 135px;
-}
-
-.block-Hero{
-    display: inline-block;
-    box-sizing: border-box;    
-    background-color: white;
-    width: 690px;
-    height: 360px;  
-    padding-top: 110px;   
-}
-
-.block-Hero-title{
-    margin:  0;
-}
-
-.block-Hero-text{
-    margin: 5px 0;
-}
-
-/* 
-*****************************************************************************************************
-    Статья "Biography"
-*****************************************************************************************************    
- */
-.art-Biography{
-    /* "Базовое" значение ширины статьи (значение по макету) = 1165px = 116.5rem */
-
-    /*
-        Для придания "резиновости" статье выставляем ширину в %
-        Примечание: делаем это здесь т.к. требуется единообразно расположить 
-                    все её секции (см. класс "block-Biography")
-    */
-    width: 81%; /* 1165px/1440px */
-    /*  
-        Повторно (под новую ширину) центрируем.
-    */
-    margin: 0 auto;     
-    
-    margin-top: 150px;
-}
-
-.block-Biography{
-    /* 
-        Секция простая - сделаем её на флексе
-     */
-    display: flex;
-    height: 840px;
-    justify-content: center;
-}
-
-.block-Biography-img{
-    width: 46.4%;  /* 541px/1165px */
-    object-fit: cover;
-}
-
-.block-Biography-text{
-    width: 39.1%; /* 455px/1165px */
-}
-
-.block-Biography-title{
-    transform: rotate(-90deg) translateX(-2rem) translateY(-1rem);
-    -webkit-transform: rotate(-90deg) translateX(-2rem) translateY(-1rem);
-    -moz-transform: rotate(-90deg) translateX(-2rem) translateY(-1rem);
-    -ms-transform: rotate(-90deg) translateX(-2rem) translateY(-1rem);
-    -o-transform: rotate(-90deg) translateX(-2rem) translateY(-1rem);
-}
-
-/* чтобы не плодить классы обратимся к блоку используя вложение селекторов */
-.block-Biography-text > h3{
-    margin-top: 18rem;
-    margin-bottom: 0;
-}
-
-/* чтобы не плодить классы обратимся к блоку используя вложение селекторов */
-.block-Biography-text > p{
-    margin-top: 2rem;
-    margin-bottom: 0;
-}
-
-/* чтобы не плодить классы обратимся к блоку используя вложение селекторов */
-.block-Biography-text > blockquote{
-    /* 
-        размещаем блок  
-    */
-    margin: 1.5rem 0 0 0;
-    /* 
-        размещаем текст
-    */
-    padding: 0 10rem 0 0;
-}
-
-.block-Bigraphy-shortline{
-    box-sizing: border-box;
-    background-color: black;
-    width: 2rem;
-    height: 0.6rem;
-    margin-top: 4.5rem;
-    margin-bottom: 0;
-}
-
-/* 
-*****************************************************************************************************
-    Статья "Designers"
-*****************************************************************************************************    
- */
-.art_Designers{
-    /* 
-        Этот раздел по ширине не ограничен, поэтому укажем только высоту по макету - 677px
-    */    
-    height: 677px;
-    /* 
-        Эту инструкцию можно и не указывать, но пусть будет (для "красоты")
-    */
-    margin: 0 auto;
-
-    margin-top: 150px;
-}
-
-.art_Designers > h2{
-    margin-left: 138.3px;
-}
-
-.block-Designers{
-    display: flex;
-    align-items: flex-end;
-    gap: 2rem;
-    margin-left: 2rem;
-    /*  
-        разрешаем скролл в блоке
-    */
-    overflow: auto;
-}
-.block-Designers > section{
-    display: flex;
-    flex-direction: column;
-    /* отключаем автоуменьшение */
-    flex-shrink: 0;
-    /* стандартный блок - 337px по макету - относительно ширины vieport'а это 23.4% */
-    max-width: 23.4vw;
-}
-.block-Designers > section > p{
-    /* стандартная подпись - 337px по макету - относительно ширины vieport'а это 23.4% */
-    max-width: 23.4vw;
-    overflow: hidden;
-}
-/* 
-здесь обращение к классу "block-item-Designers_L" выполняется не напрямую, а с добавлением
-селектора тэга. Это сделано для повышения его веса чтобы перекрыть настройки селектора 
-".block-Designers > section" (их веса выравниваются, но за счёт каскадности перекрытие происходит)
-*/
-section.block-Designers-itemL{
-    /* увеличенный блок - 572px по макету - относительно ширины vieport'а это 39.72% */
-    max-width: 39.72vw;
-}
-/* 
-К сожалению не придумал ничего иного, кроме как прямое указание отступа (
-*/
-section.block-Designers-itemL > p{
-    /* здесь отступ указан в относительных процентах (высчитывается по ширине родительского блока) */
-    margin-left: 41.4%;
-}
-
-/* 
-*****************************************************************************************************
-    Статья "Testimonials"
-*****************************************************************************************************    
- */
-.art_Testimonials{
-    /* "Базовое" значение ширины статьи (значение по макету) = 1400px = 140rem */    
-    /*
-        Для придания "резиновости" статье выставляем ширину в %
-    */
-    width: 97.22%; /* 1400px/1440px */
-
-    margin: 0 auto;
-    height: 760px;
-    margin-top: 150px;
-}
-
-.grid-Testimonials{
-    display: grid;
-    /* 
-        По высоте сетка занимает минимально необходимое место, поэтому принудительно растянем её
-    */
-    height: 100%;
-    /* 
-        для практики применим функцию calc, однако можно и проще - 
-            grid: repeat(3, 1fr) / repeat(12, 1fr);
-    */
-    grid: repeat(3, 1fr) / repeat(12, calc(100%/12));
-}
-
-/*  
-    Выставлять здесь жёсткую привязку размеров ячеек не будем чтобы трансформация в некоторых из них 
-    (grid-Testimonials-1, grid-Testimonials-2, и др.) не "уезжала"
-
-.grid-Testimonials-item{
-    width: 100%; 
-    height: 100%;
-}
-*/
-
-.grid-Testimonials-1{
-    grid-area: 1 / 2 / 1 / 2;
-    /* Фиксируем блок по-вертикали по верхнему краю (далее за счёт translateX скорректируем положение) */
-    align-self: flex-start;
-    /* Фиксируем блок по-горизонтали по правому краю (далее за счёт translateY скорректируем положение) */    
-    justify-self: flex-end;    
-}
-.grid-Testimonials-1 > p{
-    transform: rotate(-90deg) translateX(-10rem) translateY(4rem);
-    -webkit-transform: rotate(-90deg) translateX(-10rem) translateY(4rem);
-    -moz-transform: rotate(-90deg) translateX(-10rem) translateY(4rem);
-    -ms-transform: rotate(-90deg) translateX(-10rem) translateY(4rem);
-    -o-transform: rotate(-90deg) translateX(-10rem) translateY(4rem);
-}
-
-.grid-Testimonials-2{
-    grid-area: 2 / 2 / 2 / 2;
-    /* Фиксируем блок по-вертикали по верхнему краю (далее за счёт translateX скорректируем положение) */
-    align-self: flex-start;
-    /* Фиксируем блок по-горизонтали по правому краю (далее за счёт translateY скорректируем положение) */    
-    justify-self: flex-end;    
-}
-.grid-Testimonials-2 > p{
-    transform: rotate(-90deg) translateX(-10rem) translateY(4rem);
-    -webkit-transform: rotate(-90deg) translateX(-10rem) translateY(4rem);
-    -moz-transform: rotate(-90deg) translateX(-10rem) translateY(4rem);
-    -ms-transform: rotate(-90deg) translateX(-10rem) translateY(4rem);
-    -o-transform: rotate(-90deg) translateX(-10rem) translateY(4rem);
-}
-
-.grid-Testimonials-3{
-    grid-area: 3 / 2 / 3 / 2;
-    /* Фиксируем блок по-вертикали по верхнему краю (далее за счёт translateX скорректируем положение) */
-    align-self: flex-start;
-    /* Фиксируем блок по-горизонтали по правому краю (далее за счёт translateY скорректируем положение) */    
-    justify-self: flex-end;    
-}
-.grid-Testimonials-3 > p{
-    transform: rotate(-90deg) translateX(-10rem) translateY(4rem);
-    -webkit-transform: rotate(-90deg) translateX(-10rem) translateY(4rem);
-    -moz-transform: rotate(-90deg) translateX(-10rem) translateY(4rem);
-    -ms-transform: rotate(-90deg) translateX(-10rem) translateY(4rem);
-    -o-transform: rotate(-90deg) translateX(-10rem) translateY(4rem);
-}
-
-.grid-Testimonials-4{
-    grid-area: 1 / 3 / 4 / 7;
-    /*  
-        здесь привязка размеров ячейки необходима...
-    */
-    width: 100%;
-    height: 100%;      
-}
-.grid-Testimonials-4 > img{
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-}
-
-.grid-Testimonials-5{
-    grid-area: 1 / 7 / 1 / 7;
-    /* Фиксируем блок по-вертикали по верхнему краю (далее за счёт translateX скорректируем положение) */
-    align-self: flex-start;
-    /* Фиксируем блок по-горизонтали по левому краю (далее за счёт translateY скорректируем положение) */    
-    justify-self: flex-start;
-}
-.grid-Testimonials-5 > h2{
-    transform: rotate(-90deg) translateX(-4rem) translateY(-3rem);
-    -webkit-transform: rotate(-90deg) translateX(-4rem) translateY(-3rem);
-    -moz-transform: rotate(-90deg) translateX(-4rem) translateY(-3rem);
-    -ms-transform: rotate(-90deg) translateX(-4rem) translateY(-3rem);
-    -o-transform: rotate(-90deg) translateX(-4rem) translateY(-3rem);
-}
-
-.grid-Testimonials-6{
-    grid-area: 1 / 9 / 4 / 11;
-    align-self: center; 
-    /*  
-        здесь привязка размеров ячейки необходима...
-    */     
-    width: 100%;
-    height: 100%;      
-}
-.grid-Testimonials-6 > blockquote{
-    box-sizing: border-box;
-    display: flex;
-    justify-content: center;
-    padding: 0 1rem 0 1rem;
-    margin: 0;
-    width: 100%;
-    height: 50%;
-
-    p{
-        margin: 3.1rem 0 1rem 0;
-        overflow: hidden;
-    }
-}
-.grid-Testimonials-6 > img{
-    margin: 0;
-    object-fit: cover;
-    width: 100%;
-    height: 50%;
-}
-/* 
-*****************************************************************************************************
-    Статья "Strong_points"
-*****************************************************************************************************    
- */
-.art_Strong_points{
-    /* 
-        Этот раздел по ширине не ограничен, поэтому укажем только высоту по макету - 613px
-    */    
-    height: 613px;
-    /* 
-        Эту инструкцию можно и не указывать, но пусть будет (для "красоты")
-    */
-    margin: 0 auto;
-
-    margin-top: 150px;   
-}
-
-.art_Strong_points > h2{
-    margin: 0;
-    margin-left: 138.3px;
-    /* высота блока - остаток от основного (grid-Strong_points) - 613px-555px = 58px */
-    height: 58px; 
-}
-.grid-Strong_points{
-    display: flex;
-    align-items: flex-end;
-    gap: 2rem;
-    /*  
-        разрешаем скролл в блоке
-    */
-    overflow: auto;
-
-    /* 
-        Эту секцию сделаем на Grid, хотя она очень похожа на статью "Designers", которая реализована на Flex.
-        Сделаем так для демонстрации различий между Grid и Flex (в реальном проекте следует придерживаться
-        единообразия).
-
-        Следующие настройки - стандартная полоса с прокруткой
-    */
-    @supports (display: grid) {
-        display: grid;
-        grid: 1fr / auto-flow 1fr;
-    }
-    /* 
-        высота блока - по макету 555px, но указывать её здесь не будем чтобы при масштабировании не появлялся
-        вертикальный скролл. Ограничим её указав размер элементов (см. grid-Strong_points-item)
-    */
-    /* height: 555px; */
-}
-
-.grid-Strong_points-item{
-    box-sizing: border-box;
-    /* стандартный блок - 337px по макету - относительно ширины родителя это 23.4% */
-    width: 23.4vw;
-    /* ограничим высоту элементов (555px - по макету) и учтём появление горизонтального скролла ~20px */
-    height: 535px; 
-}
-
-.grid-Strong_points > img{
-    object-fit: cover;
-}
-
-.grid-Strong_points-item-3{
-    /* этот блок шире - 451px по макету - относительно ширины viewport'а это 31.32% */
-    width: 31.32vw;
-}
-
-.grid-Strong_points-item-3 > h3{
-    margin: 0;
-    text-align: center;
-}
-
-.grid-Strong_points-item-3 > ul{
-    margin: 2rem 0;
-    padding-left: 9vw;
-    /* 
-    поменяем стиль маркеров в списке - none - без маркеров
-    */
-    list-style-type: none;
-}
-
-.grid-Strong_points-item-3{
-    overflow: hidden;
-}
-/* 
-*****************************************************************************************************
-    Подвал (footer)
-*****************************************************************************************************    
- */ 
-footer{
-    /* 
-        Этот раздел по ширине не ограничен, поэтому укажем только высоту по макету - 168px
-    */    
-    height: 168px;
-    /* 
-        Эту инструкцию можно и не указывать, но пусть будет (для "красоты")
-    */
-    margin: 0 auto;
-
-    margin-top: 150px;   
-
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #0D0D0D;
-    color: #FFFFFF;
-}
-
-.Contacts > a{
-    color: #FFFFFF;
-}
-
-/* 
-*****************************************************************************************************
-    Дальше только шрифты...
-*****************************************************************************************************    
- */
-
-.font-article-name{
-    font-family: 'Roboto';
-    font-size: 2.4rem;
-    font-weight: 700;
-}
-
-.font-main-title{
-    font-family: 'Playfair Display';
-    font-size: 8.6rem;
-    font-weight: 600;
-    line-height: 10.32rem;
-}
-
-.font-main-menu{
-    font-family: 'Roboto';
-    font-size: 2.4rem;
-    font-weight: 500;
-}
-
-.font-Hero-title{
-    font-family: 'Playfair Display';
-    font-size: 8.6rem;
-    font-weight: 500;
-    line-height: 10.32rem;
-}
-
-.font-Hero-text{
-    font-family: 'Roboto';
-    font-size: 2rem;
-    font-weight: 500;
-    line-height: 2.344rem;
-}
-
-.font-Biography-title{
-    font-family: 'Playfair Display';
-    font-size: 8.6rem;
-    font-weight: 500;
-    line-height: 11.464rem;
-}
-
-.font-Biography-text{
-    font-family: 'Roboto';
-    font-size: 1.8rem;
-    font-weight: 500;
-    line-height: 2.109rem;
-}
-
-.font-Biography-cit{
-    font-family: 'Bitter';
-    font-size: 2.6rem;
-    font-weight: 400;
-    line-height: 3.12rem;
-}
-
-.font-art-text{
-    font-family: 'Roboto';
-    font-size: 1.6rem;
-    font-weight: 400;
-    line-height: 1.875rem;
-}
-
-.font-art-text-b{
-    font-family: 'Roboto';
-    font-size: 1.6rem;
-    font-weight: 700;
-    line-height: 1.875rem;
-}
-
-.font-art-cit{
-    font-family: 'Bitter';
-    font-size: 3.2rem;
-    font-weight: 400;
-    line-height: 3.84rem;
-    text-align: center;
-}
-
-.font-Strong_point-title{
-    font-family: 'Playfair Display';
-    font-size: 8.6rem;
-    font-weight: 500;
-    line-height: 8.6rem;    
-}
-
-.font-Strong_point-text{
-    font-family: 'Bitter';
-    font-size: 3.4rem;
-    font-weight: 400;
-    line-height: 4.08rem;
-    
-}
-
-.font-Contacts-text{
-    font-family: 'Roboto';
-    font-size: 1.6rem;
-    font-weight: 400;
-    line-height: 2.6rem;
-}
-
-.font-Logo-text{
-    font-family: 'Roboto';
-    font-size: 1.8rem;
-    font-weight: 500;
-    line-height: 2.109rem;
-    text-align: center;
-}
-
-.font-Logo-text-b{
-    font-family: 'Roboto';
-    font-size: 2.4rem;
-    font-weight: 900;
-    line-height: 2.813rem;
-    text-align: center;
-}
-
-.font-Pricing-text{
-    font-family: 'Roboto';
-    font-size: 1.6rem;
-    font-weight: 400;
-    line-height: 1.875rem;
-    text-align: right;    
 }

@@ -1,0 +1,13 @@
+@import '../../../abstracts/_sys.scss';
+@import '../../../abstracts/_variables.scss';
+@import '../../../abstracts/_mixins.scss';
+
+.footer-block__pricing{
+    @include set-font($font-fb__pricing...);
+    text-align: right;    
+    
+    @include screenbreak('medium') {
+        margin-top: 1rem;
+        margin-left: 1rem;
+    }
+}

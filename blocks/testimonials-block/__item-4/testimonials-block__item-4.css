@@ -1,0 +1,16 @@
+.testimonials-block__item-4 {
+  grid-area: 1/3/4/7;
+  width: 100%;
+  height: 100%;
+}
+.testimonials-block__item-4 img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+@media screen and (max-width: 1024px) {
+  .testimonials-block__item-4 {
+    display: none;
+  }
+}/*# sourceMappingURL=testimonials-block__item-4.css.map */

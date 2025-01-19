@@ -1,0 +1,18 @@
+.testimonials-block {
+  max-width: 1440px;
+  width: 97.22vw;
+  margin: 0 auto;
+  margin-top: 150px;
+  box-sizing: border-box;
+  outline: 1px solid limegreen;
+}
+@media screen and (max-width: 1024px) {
+  .testimonials-block {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 80px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}/*# sourceMappingURL=testimonials-block.css.map */

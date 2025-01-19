@@ -1,0 +1,57 @@
+@import '../../../abstracts/_sys.scss';
+@import '../../../abstracts/_variables.scss';
+@import '../../../abstracts/_mixins.scss';
+
+.biography-block__item-shortline{
+//     display: flex;
+//     left: calc(48% + 100px);
+//     top: 490px;
+//     height: 50px;
+//     min-width: calc(52% - 100px);
+//     max-width: calc(52% - 100px);
+//     align-items: center;
+
+//     div{
+//         box-sizing: border-box;
+//         background-color: black;
+//         width: 2rem;
+//         height: 0.6rem;
+//         margin-left: 5rem;
+//     };
+
+//     @media screen and (max-width: 1024px){
+//         height: 15%;
+//         flex-basis: 10%; /* т.к. flex-direction = row, то таким образом задаём ширину элемента */
+//         min-width: 10%;   
+
+//         div{
+//             margin-left: 1rem;
+//         };        
+//     }  
+
+    display: flex;
+    left: calc(48% + 100px);
+    top: 490px;
+    height: 50px;
+    min-width: calc(52% - 100px);
+    max-width: calc(52% - 100px);
+    align-items: center;
+
+    div{
+        box-sizing: border-box;
+        background-color: black;
+        width: 2rem;
+        height: 0.6rem;
+        margin-left: 5rem;
+    };    
+
+    @include screenbreak('medium'){
+        height: 15%;
+        flex-basis: 10%; /* т.к. flex-direction = row, то таким образом задаём ширину элемента */
+        min-width: 10%;   
+
+        div{
+            margin-left: 1rem;
+        }; 
+    }     
+}

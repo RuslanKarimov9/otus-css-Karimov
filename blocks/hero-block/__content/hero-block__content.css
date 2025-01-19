@@ -1,0 +1,19 @@
+.hero-block__content {
+  --cBlockHeight: 360px;
+  display: inline-block;
+  box-sizing: border-box;
+  background-color: white;
+  width: 690px;
+  height: var(--cBlockHeight);
+  padding-top: 110px;
+  outline: 1px solid limegreen;
+}
+@media screen and (max-width: 1024px) {
+  .hero-block__content {
+    width: 100%;
+    --cBlockHeight: 344px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+  }
+}/*# sourceMappingURL=hero-block__content.css.map */

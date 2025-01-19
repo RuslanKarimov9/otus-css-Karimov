@@ -1,0 +1,17 @@
+@import '../../../abstracts/_sys.scss';
+@import '../../../abstracts/_variables.scss';
+@import '../../../abstracts/_mixins.scss';
+
+.testimonials-block__item{
+    // box-sizing: border-box;
+    // width: 100%;
+    // height: 100%;
+
+    // outline: var(--outline) solid limegreen;
+
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+
+    @include showborders;
+}

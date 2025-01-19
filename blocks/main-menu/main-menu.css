@@ -1,0 +1,30 @@
+.main-menu {
+  box-sizing: border-box;
+  display: flex;
+  width: 700px;
+  justify-content: space-between;
+  align-items: center;
+  outline: 1px solid limegreen;
+}
+@media screen and (max-width: 1024px) {
+  .main-menu {
+    max-width: 1024px;
+    width: 100%;
+    height: 82px;
+    margin: 0 auto;
+    margin-top: 80px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+  }
+}
+
+.main-menu_mobile {
+  display: none;
+  outline: 1px solid limegreen;
+}
+@media screen and (max-width: 1024px) {
+  .main-menu_mobile {
+    max-width: 100%;
+    display: flex;
+  }
+}/*# sourceMappingURL=main-menu.css.map */

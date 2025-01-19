@@ -1,0 +1,36 @@
+.biography-block__item-desc {
+  left: calc(48% + 100px);
+  top: 440px;
+  height: 50px;
+  min-width: calc(52% - 100px);
+  max-width: calc(52% - 100px);
+  padding-left: 5rem;
+  font-family: "Roboto";
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 2.109rem;
+  outline: 1px solid limegreen;
+}
+.biography-block__item-desc p {
+  margin: 0;
+}
+.biography-block__item-desc p:nth-child(1) {
+  display: block;
+}
+.biography-block__item-desc p:nth-child(2) {
+  display: none;
+}
+@media screen and (max-width: 1024px) {
+  .biography-block__item-desc {
+    flex-basis: 50%;
+    height: 15%;
+    max-width: 100%;
+    padding-left: 1rem;
+  }
+  .biography-block__item-desc p:nth-child(1) {
+    display: none;
+  }
+  .biography-block__item-desc p:nth-child(2) {
+    display: block;
+  }
+}/*# sourceMappingURL=biography-block__item-desc.css.map */

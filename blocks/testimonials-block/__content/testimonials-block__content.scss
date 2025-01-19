@@ -1,0 +1,83 @@
+@import '../../../abstracts/_sys.scss';
+@import '../../../abstracts/_variables.scss';
+@import '../../../abstracts/_mixins.scss';
+
+.testimonials-block__content{
+    // /* объявляем собственные параметры */
+    // --cBlockHeight: 760px;
+
+    // display: grid;
+    // height: var(--cBlockHeight);
+    // width: 100%;
+    // /* 
+    //     для практики применим функцию calc, однако можно и проще - 
+    //         grid: repeat(3, 1fr) / repeat(12, 1fr);
+    // */
+    // grid: repeat(3, 1fr) / repeat(12, calc(100%/12));
+    // justify-content: stretch;
+
+    // @media screen and (max-width: 1024px) {
+    //     --cBlockHeight: 705px;   
+    //     grid: repeat(12, 1fr) / repeat(2, 1fr);
+    //     grid-template-areas:
+    //     "top top"
+    //     "main main"
+    //     "main main"
+    //     "main main"
+    //     "main main"
+    //     "main main"
+    //     "main main"
+    //     "main main"      
+    //     "main main"
+    //     "main main"          
+    //     "link1 link2"
+    //     "link3 link4";   
+    // }
+    // outline: var(--outline) solid limegreen; 
+
+
+    // объявляем собственные параметры 
+    @include set-css-var('cBlockHeight', 760px);
+
+    display: grid;
+    height: get-css-var('cBlockHeight');
+    width: 100%;    
+
+    // для практики применим функцию calc, однако можно и проще - grid: repeat(3, 1fr) / repeat(12, 1fr);
+    grid: repeat(3, 1fr) / repeat(12, calc(100%/12));
+    justify-content: stretch;    
+
+    @include screenbreak('medium') {
+        // выставляем высоту через установку css-переменной
+        @include set-css-var('cBlockHeight', 705px);
+
+        // в этой сетке дадим ячейкам имена
+        grid: repeat(12, 1fr) / repeat(2, 1fr);
+        grid-template-areas:
+        "top top"
+        "main main"
+        "main main"
+        "main main"
+        "main main"
+        "main main"
+        "main main"
+        "main main"      
+        "main main"
+        "main main"          
+        "link1 link2"
+        "link3 link4";   
+    };
+
+    @include showborders;
+}
+
+// *****************************************************************************************************    
+//     Модификаторы 
+// *****************************************************************************************************        
+.testimonials-block__content_font{
+    @include set-font($font-tb__content...);
+}
+
+.testimonials-block__content_font-b{
+    @include set-font($font-tb__content-b...);
+}

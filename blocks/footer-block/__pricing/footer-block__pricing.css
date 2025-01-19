@@ -1,0 +1,13 @@
+.footer-block__pricing {
+  font-family: "Roboto";
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.875rem;
+  text-align: right;
+}
+@media screen and (max-width: 1024px) {
+  .footer-block__pricing {
+    margin-top: 1rem;
+    margin-left: 1rem;
+  }
+}/*# sourceMappingURL=footer-block__pricing.css.map */

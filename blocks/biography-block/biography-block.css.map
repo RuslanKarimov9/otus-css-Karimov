@@ -1,0 +1,1 @@
+{"version":3,"sources":["biography-block.css","biography-block.scss","../../abstracts/_mixins.scss","../../abstracts/_sys.scss"],"names":[],"mappings":"AAAA,gBAAgB;ACIhB;EACI;;;;;GAAA;ECSA,iBAAA;EAMqB,WDMY;ECIjC,cAAA;EAII,iBAAA;EA1BA,4BAAA;AFKR;AG8BQ;EFvCR;ICUI,iBAAA;IAMqB,WDUiB;ICAtC,cAAA;IAII,gBAAA;EFdN;AACF","file":"biography-block.css"}

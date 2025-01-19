@@ -1,0 +1,29 @@
+.designers-block {
+  display: flex;
+  flex-direction: column;
+  --cBlockHeight: 677px;
+  max-width: 1440px;
+  height: var(--cBlockHeight);
+  margin: 0 auto;
+  margin-top: 150px;
+  outline: 1px solid limegreen;
+}
+@media screen and (max-width: 1024px) {
+  .designers-block {
+    --cBlockHeight: 573px;
+    max-width: 1024px;
+    width: 100%;
+    height: var(--cBlockHeight);
+    margin: 0 auto;
+    margin-top: 80px;
+  }
+}
+
+.designers-block > h2 {
+  margin-left: 13.83rem;
+}
+@media screen and (max-width: 1024px) {
+  .designers-block > h2 {
+    margin-left: 1rem;
+  }
+}/*# sourceMappingURL=designers-block.css.map */

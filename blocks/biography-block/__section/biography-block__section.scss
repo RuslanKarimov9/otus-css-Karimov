@@ -1,0 +1,45 @@
+@import '../../../abstracts/_sys.scss';
+@import '../../../abstracts/_variables.scss';
+@import '../../../abstracts/_mixins.scss';
+
+.biography-block__section{
+        // /* объявляем собственные параметры */
+        // --cBlockHeight: 840px;
+        // --outline: 0px;
+        // /* обявляем контейнер как якорь для абсолютного позиционирования дочерних элементов */
+        // position: relative; 
+    
+        // margin: 0;
+        // height: var(--cBlockHeight);
+        
+        // @media screen and (max-width: 1024px) {
+        //     width: 100%;
+        //     --cBlockHeight: 952px;
+    
+        //     display: flex;
+        //     flex-direction: row;
+        //     flex-wrap: wrap;
+        // };
+        // outline: var(--outline) solid limegreen;         
+
+        // объявляем css-переменную 'cBlockHeight'. 
+        // Она используется в дочерних классах
+        @include set-css-var('cBlockHeight', 840px);
+        // обявляем контейнер как якорь для абсолютного позиционирования дочерних элементов
+        position: relative; 
+    
+        margin: 0;
+        height: get-css-var('cBlockHeight');
+        
+        @include screenbreak('medium') {
+            width: 100%;
+            // изменение css-переменной приведёт к изменению свойства "height"
+            @include set-css-var('cBlockHeight', 952px);
+    
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        };
+
+        @include showborders;               
+    }

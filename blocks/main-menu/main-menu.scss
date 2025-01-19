@@ -1,0 +1,61 @@
+@import '../../abstracts/_sys.scss';
+@import '../../abstracts/_variables.scss';
+@import '../../abstracts/_mixins.scss';
+
+.main-menu{
+    // --outline: 0px; 
+
+    // box-sizing: border-box;
+    // display: flex;
+    // width: 700px;
+    // justify-content: space-between;
+    // align-items: center;
+
+    // @media screen and (max-width: 1024px){
+    //     width: 100%;
+    //     height: 82px;
+    //     margin-top: var(--mobil-margin-top);
+    //     border-top: 2px solid black;
+    //     border-bottom: 2px solid black;
+    // }
+
+    // outline: var(--outline) solid limegreen; 
+
+    box-sizing: border-box;
+    display: flex;
+    width: 700px;
+    justify-content: space-between;
+    align-items: center;   
+    
+    @include screenbreak('medium')
+    {
+        @include set-as-section('medium', 100%, 82px); 
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
+    };
+    
+    @include showborders;
+}
+
+
+// *****************************************************************************************************    
+//     Модификаторы 
+// *****************************************************************************************************        
+.main-menu_mobile{
+    // display: none;
+
+    // @media screen and (max-width: 1024px){
+    //     max-width: 100%;
+    //     display: flex;
+    // }
+
+    display: none;
+
+    @include screenbreak('medium')
+    {
+        max-width: 100%;
+        display: flex;
+    };
+    
+    @include showborders;   
+}
