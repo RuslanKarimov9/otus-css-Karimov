@@ -1,0 +1,34 @@
+@import '../../abstracts/_sys.scss';
+@import '../../abstracts/_variables.scss';
+@import '../../abstracts/_mixins.scss';
+
+$width: 400px;
+
+// подложка
+#win{
+    // подложку привязываем к странице и разворачиваем на весь экран
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; 
+}
+.win_closed{
+    display: none;
+}
+
+// окно
+.win{
+    // окно привязываем к странице
+    display: flex;
+    position: fixed;
+
+    width: $width;
+    left: calc((100% - #{$width})/2);
+    top: 50px; 
+    
+    justify-content: center;
+    align-items: center;  
+    flex-direction: column;  
+    background-color: white;
+}
