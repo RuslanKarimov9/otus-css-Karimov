@@ -13,5 +13,5 @@
 }
 
 .footer-block__contacts > a {
-  color: #FFFFFF;
+  color: var(--mainColor);
 }/*# sourceMappingURL=footer-block__contacts.css.map */

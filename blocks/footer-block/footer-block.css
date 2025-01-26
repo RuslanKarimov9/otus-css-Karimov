@@ -8,8 +8,7 @@
   justify-content: space-between;
   align-items: center;
   background-color: #0D0D0D;
-  color: #FFFFFF;
-  outline: 1px solid limegreen;
+  color: var(--mainColor);
 }
 @media screen and (max-width: 1024px) {
   .footer-block {

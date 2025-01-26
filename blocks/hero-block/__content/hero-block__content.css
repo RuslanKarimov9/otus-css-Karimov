@@ -2,11 +2,10 @@
   --cBlockHeight: 360px;
   display: inline-block;
   box-sizing: border-box;
-  background-color: white;
+  background-color: var(--mainColor);
   width: 690px;
   height: var(--cBlockHeight);
   padding-top: 110px;
-  outline: 1px solid limegreen;
 }
 @media screen and (max-width: 1024px) {
   .hero-block__content {

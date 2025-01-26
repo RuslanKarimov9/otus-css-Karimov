@@ -1,1 +1,1 @@
-{"version":3,"sources":["biography-block__item.scss","../../../abstracts/_mixins.scss","biography-block__item.css","../../../abstracts/_sys.scss"],"names":[],"mappings":"AAIA;EAEI,SAAA;EACA,sBAAA;EAEA,kBAAA;ECDI,4BAAA;ACHR;AFMI;EACI,aAAA;AEJR;ACmCQ;EHvCR;IAcQ,gBAAA;EENN;AACF","file":"biography-block__item.css"}
+{"version":3,"sources":["biography-block__item.scss","biography-block__item.css","../../../abstracts/_sys.scss"],"names":[],"mappings":"AAIA;EAEI,SAAA;EACA,sBAAA;EAEA,kBAAA;ACLJ;ADOI;EACI,aAAA;ACLR;ACoCQ;EFvCR;IAcQ,gBAAA;ECPN;AACF","file":"biography-block__item.css"}
