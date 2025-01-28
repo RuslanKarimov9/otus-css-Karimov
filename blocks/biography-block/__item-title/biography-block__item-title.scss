@@ -1,0 +1,57 @@
+@import '../../../abstracts/_sys.scss';
+@import '../../../abstracts/_variables.scss';
+@import '../../../abstracts/_mixins.scss';
+
+.biography-block__item-title{
+//     left: 48%;
+//     height: var(--cBlockHeight);
+//     width: 100px;
+
+//     h2{
+//         transform: rotate(-90deg) translateX(-30px);
+//         -webkit-transform: rotate(-90deg) translateX(-30px);
+//         -moz-transform: rotate(-90deg) translateX(-30px);
+//         -ms-transform: rotate(-90deg) translateX(-30px);
+//         -o-transform: rotate(-90deg) translateX(-30px);
+
+//         font-family: 'Roboto';
+//         font-size: 2.4rem;
+//         font-weight: 700;
+// };
+
+//     @media screen and (max-width: 1024px){
+//         flex-basis: 50%; // т.к. flex-direction = row, то таким образом задаём ширину элемента 
+//         height: 15%;
+//         h2{
+//             margin: 0;
+//             transform: none;
+//             text-align: right;
+//             padding-right: 2rem;
+//         }
+//     }
+
+    left: 48%;
+    height: get-css-var('cBlockHeight');
+    width: 100px;
+
+    h2{
+        transform: rotate(-90deg) translateX(-30px);
+        -webkit-transform: rotate(-90deg) translateX(-30px);
+        -moz-transform: rotate(-90deg) translateX(-30px);
+        -ms-transform: rotate(-90deg) translateX(-30px);
+        -o-transform: rotate(-90deg) translateX(-30px);
+
+        @include set-font($font-bb__item-title...);
+    };    
+
+    @include screenbreak('medium'){
+        flex-basis: 50%; // т.к. flex-direction = row, то таким образом задаём ширину элемента 
+        height: 15%;
+        h2{
+            margin: 0;
+            transform: none;
+            text-align: right;
+            padding-right: 2rem;
+        }
+    }    
+}

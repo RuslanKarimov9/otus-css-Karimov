@@ -1,0 +1,51 @@
+@import '../../abstracts/_sys.scss';
+@import '../../abstracts/_variables.scss';
+@import '../../abstracts/_mixins.scss';
+
+.designers-block{
+    // /* объявляем собственные параметры */
+    //     --cBlockHeight: 677px;
+    //     --outline: 0px;
+    
+    //     display: flex;
+    //     flex-direction: column;
+    //     /* 
+    //         Этот раздел по ширине не ограничен - 100%, высота по макету - 677px
+    //     */    
+    //     max-width: var(--desktop-maxWidth);
+    //     height: var(--cBlockHeight);
+    //     /* Эту инструкцию можно и не указывать, но пусть будет (для "красоты") */
+    //     margin: 0 auto;
+    //     margin-top: var(--desktop-margin-top);
+    
+    //     @media screen and (max-width: 1024px) {
+    //         /* меняем размеры */
+    //         max-width: 100%;
+    //         --cBlockHeight: 573px;        
+    
+    //         margin: 0; 
+    //         margin-top: var(--mobil-margin-top);  
+    //     }     
+    //     outline: var(--outline) solid limegreen;   
+
+        display: flex;
+        flex-direction: column;    
+        // Этот раздел по ширине не ограничен - 100%, высота по макету - 677px
+        @include set-css-var('cBlockHeight', 677px);
+        @include set-as-section('large', 0, 'cBlockHeight');    
+        
+        @include screenbreak('medium') {
+            @include set-css-var('cBlockHeight', 573px);
+            @include set-as-section('medium', 100%, 'cBlockHeight');    
+        }
+
+        @include showborders; 
+}
+
+.designers-block > h2{
+        margin-left: 13.83rem;
+    
+        @include screenbreak('medium') {
+            margin-left: 1rem;
+        }
+}    

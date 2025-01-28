@@ -1,0 +1,18 @@
+@media screen and (max-width: 1024px) {
+  header {
+    display: none;
+  }
+}
+
+.header-block {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  outline: 1px solid limegreen;
+}
+.header-block h1 {
+  padding-left: 2rem;
+}/*# sourceMappingURL=header-block.css.map */

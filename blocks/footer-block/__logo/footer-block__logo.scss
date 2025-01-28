@@ -1,0 +1,48 @@
+@import '../../../abstracts/_sys.scss';
+@import '../../../abstracts/_variables.scss';
+@import '../../../abstracts/_mixins.scss';
+
+.footer-block__logo{
+    // font-family: 'Roboto';
+    // font-size: 1.8rem;
+    // font-weight: 500;
+    // line-height: 2.109rem;
+    // text-align: center;   
+    
+    // @media screen and (max-width: 1024px) {
+    //     position: absolute;
+    //     margin: 0;
+    //     width: calc(100% - 1rem);
+    //     top: 30px;
+    //     left: 0;
+    //     text-align: right;
+    // }
+
+    @include set-font($font-fb__logo...);
+    text-align: center;  
+
+    @include screenbreak('medium') {
+        position: absolute;
+        margin: 0;
+        width: calc(100% - 1rem);
+        top: 30px;
+        left: 0;
+        text-align: right;
+    }    
+}
+
+// /* 
+// *****************************************************************************************************    
+//     Модификаторы 
+// *****************************************************************************************************        
+// */
+.footer-block__logo_font-b{
+    // font-family: 'Roboto';
+    // font-size: 2.4rem;
+    // font-weight: 900;
+    // line-height: 2.813rem;
+    // text-align: center;
+
+    @include set-font($font-fb__logo-b...);
+    text-align: center;
+}

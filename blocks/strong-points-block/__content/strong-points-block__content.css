@@ -1,0 +1,24 @@
+.strong-points-block__content {
+  display: flex;
+  align-items: flex-end;
+  gap: 2rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  outline: 1px solid limegreen;
+}
+@supports (display: grid) {
+  .strong-points-block__content {
+    display: grid;
+    grid: 1fr/auto-flow 1fr;
+    overflow: auto;
+  }
+}
+.strong-points-block__content img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media screen and (max-width: 1024px) {
+  .strong-points-block__content {
+    gap: 1rem;
+  }
+}/*# sourceMappingURL=strong-points-block__content.css.map */

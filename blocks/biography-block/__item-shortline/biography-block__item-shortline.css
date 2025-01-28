@@ -1,0 +1,27 @@
+@charset "UTF-8";
+.biography-block__item-shortline {
+  display: flex;
+  left: calc(48% + 100px);
+  top: 490px;
+  height: 50px;
+  min-width: calc(52% - 100px);
+  max-width: calc(52% - 100px);
+  align-items: center;
+}
+.biography-block__item-shortline div {
+  box-sizing: border-box;
+  background-color: black;
+  width: 2rem;
+  height: 0.6rem;
+  margin-left: 5rem;
+}
+@media screen and (max-width: 1024px) {
+  .biography-block__item-shortline {
+    height: 15%;
+    flex-basis: 10%; /* т.к. flex-direction = row, то таким образом задаём ширину элемента */
+    min-width: 10%;
+  }
+  .biography-block__item-shortline div {
+    margin-left: 1rem;
+  }
+}/*# sourceMappingURL=biography-block__item-shortline.css.map */

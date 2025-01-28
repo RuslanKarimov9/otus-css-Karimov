@@ -1,0 +1,13 @@
+.strong-points-block__item {
+  box-sizing: border-box;
+  width: 337px;
+  height: 535px;
+  outline: 1px solid limegreen;
+}
+@media screen and (max-width: 1024px) {
+  .strong-points-block__item {
+    gap: 1rem;
+    height: 435px;
+    width: 310px;
+  }
+}/*# sourceMappingURL=strong-points-block__item.css.map */

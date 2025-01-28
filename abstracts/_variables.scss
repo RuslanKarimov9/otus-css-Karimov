@@ -1,0 +1,270 @@
+@import '_sys.scss';
+
+// *****************************************************************************************************    
+//     Отладка
+// ***************************************************************************************************** 
+/// флаг отладки 
+/// подробнее - см. примесь "showborders"
+$debug-flag: true;
+
+// *****************************************************************************************************    
+//     Типографика
+//     Здесь представлены карты типографики для использования совместно с примесью "set-font"
+// ***************************************************************************************************** 
+/// шрифт для: 
+///     - blocks/biography-block/__item-cit/biography-block__item-cit.scss
+/// 
+$font-bb__item-cit: (
+    'family': 'Bitter',
+    'size': 2.6rem,
+    'weight': 400,
+    'line-height': 3.12rem,
+);
+/// шрифт для: 
+///     - blocks/biography-block/__item-cit/biography-block__item-cit.scss
+/// 
+$font-bb__item-cit-m: (
+    'family': 'Bitter',
+    'size': 3rem,
+    'weight': 300,
+    'line-height': 3.6rem,
+);
+/// шрифт для: 
+///     - blocks/biography-block/__item-desc/biography-block__item-desc.scss
+/// 
+$font-bb__item-desc: (
+    'family': 'Roboto',
+    'size': 1.8rem,
+    'weight': 500,
+    'line-height': 2.109rem,
+);
+
+/// шрифт для:
+///     - blocks\biography-block\__item-text\biography-block__item-text.scss
+/// 
+$font-bb__item-text: (
+    'family': 'Playfair Display',
+    'size': 8.6rem,
+    'weight': 500,
+    'line-height': 11.464rem,
+);
+
+/// шрифт для:
+///     - blocks\biography-block\__item-text\biography-block__item-text.scss
+/// 
+$font-bb__item-text-m: (
+    'family': 'Playfair Display',
+    'size': 6.4rem,
+    'weight': 400,
+    'line-height': 8.531rem,
+);
+
+/// шрифт для:
+///     - blocks\biography-block\__item-title\biography-block__item-title.scss
+/// 
+$font-bb__item-title: (
+    'family': 'Roboto',
+    'size': 2.4rem,
+    'weight': 700,
+    'line-height': null,  // значение по-умолчанию
+);
+
+/// шрифт для:
+///     - blocks\designers-block\__content\designers-block__content.scss
+/// 
+$font-db__content: (
+    'family': 'Roboto',
+    'size': 1.6rem,
+    'weight': 400,
+    'line-height': 1.875rem,
+);
+
+/// шрифт для:
+///     - blocks\designers-block\__content\designers-block__content.scss
+/// 
+$font-db__content-b: (
+    'family': 'Roboto',
+    'size': 1.6rem,
+    'weight': 700,
+    'line-height': 1.875rem,
+);
+
+/// шрифт для:
+///     - blocks\designers-block\__title\designers-block__title.scss
+/// 
+$font-db__title: (
+    'family': 'Roboto',
+    'size': 2.4rem,
+    'weight': 700,
+    'line-height': null,  // значение по-умолчанию    
+);
+
+/// шрифт для:
+///     - blocks\footer-block\__contacts\footer-block__contacts.scss
+/// 
+$font-fb__contact: (
+    'family': 'Roboto',
+    'size': 1.6rem,
+    'weight': 400,
+    'line-height': 2.6rem,
+);
+
+/// шрифт для:
+///     - blocks\footer-block\__logo\footer-block__logo.scss
+/// 
+$font-fb__logo: (
+    'family': 'Roboto',
+    'size': 1.8rem,
+    'weight': 500,
+    'line-height': 2.109rem,
+);
+
+/// шрифт для:
+///     - blocks\footer-block\__logo\footer-block__logo.scss
+/// 
+$font-fb__logo-b: (
+    'family': 'Roboto',
+    'size': 2.4rem,
+    'weight': 900,
+    'line-height': 2.813rem,
+);
+
+/// шрифт для:
+///     - blocks\footer-block\__pricing\footer-block__pricing.scss
+/// 
+$font-fb__pricing: (
+    'family': 'Roboto',
+    'size': 1.6rem,
+    'weight': 400,
+    'line-height': 1.875rem,
+);
+
+/// шрифт для:
+///     - blocks\header-block\__title\header-block__title.scss
+/// 
+$font-hb__title: (
+    'family': 'Playfair Display',
+    'size': 8.6rem,
+    'weight': 600,
+    'line-height': 10.32rem,
+);
+
+/// шрифт для:
+///     - blocks\hero-block\__text\hero-block__text.scss
+/// 
+$font-hb__text: (
+    'family': 'Roboto',
+    'size': 2rem,
+    'weight': 500,
+    'line-height': 2.344rem,
+);
+
+/// шрифт для:
+///     - blocks\hero-block\__title\hero-block__title.scss
+/// 
+$font-hb__title: (
+    'family': 'Playfair Display',
+    'size': 8.6rem,
+    'weight': 500,
+    'line-height': 10.32rem,
+);
+
+/// шрифт для:
+///     - blocks\main-menu\__item\main-menu__item.scss
+/// 
+$font-mm__item: (
+    'family': 'Roboto',
+    'size': 2.4rem,
+    'weight': 500, 
+    'line-height': null,  // значение по-умолчанию        
+);
+
+/// шрифт для:
+///     - blocks\main-menu\__item\main-menu__item.scss
+/// 
+$font-mm__item-m: (
+    'family': 'Bitter',
+    'size': 4.0rem,
+    'weight': 400,
+    'line-height': 4.8rem,
+);
+
+/// шрифт для:
+///     - blocks\strong-points-block\__item-3\strong-points-block__item-3.scss
+/// 
+$font-spb__item-3: (
+    'family': 'Playfair Display',
+    'size': 8.6rem,
+    'weight': 500,
+    'line-height': 8.6rem,
+);
+
+/// шрифт для:
+///     - blocks\strong-points-block\__item-3\strong-points-block__item-3.scss
+/// 
+$font-spb__item-3_ul: (
+    'family': 'Bitter',
+    'size': 3.4rem,
+    'weight': 400,
+    'line-height': 4.08rem,
+);
+
+/// шрифт для:
+///     - blocks\strong-points-block\__title\strong-points-block__title.scss
+/// 
+$font-spb__title: (
+    'family': 'Roboto',
+    'size': 2.4rem,
+    'weight': 700,
+    'line-height': null,  // значение по-умолчанию        
+);
+
+/// шрифт для:
+///     - blocks\testimonials-block\__content\testimonials-block__content.scss
+/// 
+$font-tb__content: (
+    'family': 'Roboto',
+    'size': 1.6rem,
+    'weight': 400,
+    'line-height': 1.875rem,
+);
+
+/// шрифт для:
+///     - blocks\testimonials-block\__content\testimonials-block__content.scss
+/// 
+$font-tb__content-b: (
+    'family': 'Roboto',
+    'size': 1.6rem,
+    'weight': 700,
+    'line-height': 1.875rem,
+);
+
+/// шрифт для:
+///     - blocks\testimonials-block\__item-5\testimonials-block__item-5.scss
+/// 
+$font-tb__item-5: (
+    'family': 'Roboto',
+    'size': 2.4rem,
+    'weight': 700,
+    'line-height': null,  // значение по-умолчанию   
+);
+
+/// шрифт для:
+///     - blocks\testimonials-block\__item-6\testimonials-block__item-6.scss
+/// 
+$font-tb__item-6: (
+    'family': 'Bitter',
+    'size': 3.2rem,
+    'weight': 400,
+    'line-height': 3.84rem,
+);
+
+/// шрифт для:
+///     - blocks\testimonials-block\__item-6\testimonials-block__item-6.scss
+/// 
+$font-tb__item-6-m: (
+    'family': 'Bitter',
+    'size': 3.0rem,
+    'weight': 300,
+    'line-height': 3.6rem,
+);

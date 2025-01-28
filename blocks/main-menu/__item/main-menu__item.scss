@@ -1,0 +1,42 @@
+@import '../../../abstracts/_sys.scss';
+@import '../../../abstracts/_variables.scss';
+@import '../../../abstracts/_mixins.scss';
+
+.main-menu__item{
+    // text-align: center;
+    // width: 16rem;   
+
+    // font-family: 'Roboto';
+    // font-size: 2.4rem;
+    // font-weight: 500;
+
+    // @media screen and (max-width: 1024px){
+    //     width: 100%;
+
+    //     font-family: 'Bitter';
+    //     font-size: 4.0rem;
+    //     font-weight: 400;
+    //     line-height: 4.8rem;        
+    // }
+
+    // outline: var(--outline) solid limegreen; 
+
+    text-align: center;
+    width: 16rem;   
+    
+    @include set-font($font-mm__item...);
+
+    @include screenbreak('medium') {
+        width: 100%;
+        @include set-font($font-mm__item-m...);
+    }
+
+    @include showborders; 
+}
+
+.main-menu__item:nth-child(4){
+    @include screenbreak('medium') {
+        font-weight: 700;
+        text-decoration-line: underline;
+    }
+}

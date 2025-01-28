@@ -1,0 +1,41 @@
+.strong-points-block__item-3 {
+  width: 1000px;
+  overflow: hidden;
+}
+.strong-points-block__item-3 h3 {
+  margin: 0;
+  width: 100%;
+  text-align: center;
+  font-family: "Playfair Display";
+  font-size: 8.6rem;
+  font-weight: 500;
+  line-height: 8.6rem;
+}
+.strong-points-block__item-3 ul {
+  margin: 2rem 0;
+  padding-left: 9rem;
+  list-style-type: none;
+  font-family: "Bitter";
+  font-size: 3.4rem;
+  font-weight: 400;
+  line-height: 4.08rem;
+}
+@media screen and (max-width: 1024px) {
+  .strong-points-block__item-3 {
+    width: 201px;
+    grid-area: 1/1/1/1;
+  }
+  .strong-points-block__item-3 h3 {
+    font-size: 4.6rem;
+    font-weight: 400;
+    line-height: 4.6rem;
+  }
+  .strong-points-block__item-3 ul {
+    padding-left: 1rem;
+    font-size: 2.4rem;
+    line-height: 2.88rem;
+  }
+  .strong-points-block__item-3 ul > li {
+    margin-bottom: 0.5rem;
+  }
+}/*# sourceMappingURL=strong-points-block__item-3.css.map */
