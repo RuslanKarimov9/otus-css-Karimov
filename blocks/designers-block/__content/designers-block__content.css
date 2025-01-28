@@ -7,7 +7,6 @@
   margin-left: 2rem;
   margin-right: 2rem;
   overflow: auto;
-  outline: 1px solid limegreen;
 }
 @media screen and (max-width: 1024px) {
   .designers-block__content {

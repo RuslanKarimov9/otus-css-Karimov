@@ -78,6 +78,12 @@
 @import url(/blocks/footer-block/__mail/footer-block__mail.css);
 @import url(/blocks/footer-block/__logo/footer-block__logo.css);
 @import url(/blocks/footer-block/__pricing/footer-block__pricing.css);
+/* 
+*****************************************************************************************************
+    Подключаемая область
+*****************************************************************************************************    
+ */ 
+@import url(/blocks/win/win.css);
 
 
 /*
@@ -93,6 +99,19 @@ html{
     --desktop-margin-top: 150px;
     --mobil-maxWidth: 1024px; /* iPadPro - 1024 X 1366 */
     --desktop-maxWidth: 1440px;
+
+    /* основной цвет*/
+    --mainColor: rgba(255, 255, 255, 1);  /* белый */
+
+    /* чтобы при блокировании прокрутки (overflow: hidden) скролл не исчезал */
+    scrollbar-gutter: stable; 
+
+    /* 
+        привязываем свойство "цвет подложки" (background-color) к основному цвету, чтобы при блокировании 
+        (см. класс .scroll-locked) изменение переменной привело к его изменению 
+        Примечание: к этй переменной привязаны и ряд других свойств
+    */
+    background-color: var(--mainColor);
 }
 
 /*
@@ -115,4 +134,10 @@ body{
 a{
     text-decoration: none;
     color: black;
+}
+
+/* scroll-locked - класс-блокировщик прокрутки страницы - подробнее см. <script> */
+.scroll-locked {
+    overflow: hidden;
+    --mainColor: rgba(230, 230, 230, 1);
 }

@@ -3,7 +3,6 @@
   position: relative;
   margin: 0;
   height: var(--cBlockHeight);
-  outline: 1px solid limegreen;
 }
 @media screen and (max-width: 1024px) {
   .biography-block__section {

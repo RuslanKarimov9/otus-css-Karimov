@@ -3,7 +3,6 @@
   height: 613px;
   margin: 0 auto;
   margin-top: 150px;
-  outline: 1px solid limegreen;
 }
 @media screen and (max-width: 1024px) {
   .strong-points-block {

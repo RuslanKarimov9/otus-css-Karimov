@@ -31,7 +31,7 @@
 
     display: inline-block;
     box-sizing: border-box;    
-    background-color: white;
+    background-color: var(--mainColor);
     width: 690px;
     height: get-css-var('cBlockHeight'); 
     padding-top: 110px;    

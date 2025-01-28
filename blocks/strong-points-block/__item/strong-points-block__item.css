@@ -2,7 +2,6 @@
   box-sizing: border-box;
   width: 337px;
   height: 535px;
-  outline: 1px solid limegreen;
 }
 @media screen and (max-width: 1024px) {
   .strong-points-block__item {

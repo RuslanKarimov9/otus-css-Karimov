@@ -2,7 +2,6 @@
   margin: 0;
   box-sizing: border-box;
   position: absolute;
-  outline: 1px solid limegreen;
 }
 .biography-block__item div:nth-child(2) {
   display: none;
